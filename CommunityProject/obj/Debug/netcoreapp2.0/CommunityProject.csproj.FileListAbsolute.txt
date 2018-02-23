@@ -1,0 +1,10 @@
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.deps.json
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.json
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.dev.json
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.dll
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.pdb
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.csproj.CoreCompileInputs.cache
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.AssemblyInfoInputs.cache
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.AssemblyInfo.cs
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.dll
+/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.pdb
