@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
-      "projectName": "CommunityProject",
-      "projectPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
+      "projectUniqueName": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\ProjectName\\ProjectName.csproj",
+      "projectName": "ProjectName",
+      "projectPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\ProjectName\\ProjectName.csproj",
       "packagesPath": "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\obj\\",
+      "outputPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\ProjectName\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
