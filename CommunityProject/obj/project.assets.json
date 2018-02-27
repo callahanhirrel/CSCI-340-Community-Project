@@ -12535,28 +12535,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/callahanhirrel/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/CommunityProject.csproj",
+      "projectUniqueName": "C:\\Users\\Chantal Danyluk\\Desktop\\Databases\\CSCI-340-Community-Project\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
       "projectName": "CommunityProject",
-      "projectPath": "/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/CommunityProject.csproj",
-      "packagesPath": "/Users/callahanhirrel/.nuget/packages/",
-      "outputPath": "/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/",
+      "projectPath": "C:\\Users\\Chantal Danyluk\\Desktop\\Databases\\CSCI-340-Community-Project\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
+      "packagesPath": "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chantal Danyluk\\Desktop\\Databases\\CSCI-340-Community-Project\\CSCI-340-Community-Project\\CommunityProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/callahanhirrel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Chantal Danyluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

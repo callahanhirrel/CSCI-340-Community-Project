@@ -1,1 +1,165 @@
-body{padding-top:50px;padding-bottom:20px}.body-content{padding-left:15px;padding-right:15px}.carousel-caption p{font-size:20px;line-height:1.4}.carousel-inner .item img[src$=".svg"]{width:100%}#qrCode{margin:15px}@media screen and (max-width:767px){.carousel-caption{display:none}}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+paragraph {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  background-color: #222222;
+  max-width: 100%;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  color: white;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('http://i852.photobucket.com/albums/ab88/freckleface130/chdc%20picture444_zpsevjng47v.jpg');
+  background-size: cover;
+  max-width: 1170;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  color: #ffffff;
+  max-height: 300px;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  max-height: 30000px;
+  margin: 0;
+  color: #fff;
+  text-shadow: -2px 0 #495466, 0 2px #495466, 2px 0 #495466, 0 -2px #495466;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  text-shadow: -2px 0 #495466, 0 2px #495466, 2px 0 #495466, 0 -2px #495466;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+   background-color: #495466
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+  background-color: #222222;
+  color: white;
+  max-width: 100%;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+
+
+
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

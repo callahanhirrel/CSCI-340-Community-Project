@@ -14,6 +14,7 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     </environment>
 </head>
 <body>
@@ -31,6 +32,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
+		    <li><a asp-page="/Events">Home</a></li>
+		    <li><a asp-page="/Sponsors">Home</a></li>
+		    <li><a asp-page="/Volunteers">Home</a></li>
                     <li><a asp-page="/About">About</a></li>
                     <li><a asp-page="/Contact">Contact</a></li>
                 </ul>
@@ -39,11 +43,27 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
+
+	</div>
         <hr />
         <footer>
-            <p>&copy; 2017 - CommunityProject</p>
-        </footer>
+     <div class="row">
+      <ul class="col-sm-8">
+        <li class="col-sm-8">
+        <p>Office: Conway HDC</p>
+        </li>
+        <li class="col-sm-8">
+        <p>Hours: 8:00 AM - 4:30 PM, Monday - Friday</p>
+        </li>
+        <li class="col-sm-8">
+          <p>Address: 150 East Siebenmorgen Road, Conway, AR 72032</p>
+        </li>
+        <li class="col-sm-8">
+          <p>Contact: 501-329-6851 | 501-336-0508</p>
+        </li>
+        </ul>
     </div>
+  </footer>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
