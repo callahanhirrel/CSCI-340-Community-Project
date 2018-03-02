@@ -12535,30 +12535,36 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/callahanhirrel/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
       "projectName": "CommunityProject",
       "projectPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
       "packagesPath": "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\obj\\",
+=======
+      "projectUniqueName": "/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/CommunityProject.csproj",
+      "projectName": "CommunityProject",
+      "projectPath": "/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/CommunityProject.csproj",
+      "packagesPath": "/Users/callahanhirrel/.nuget/packages/",
+      "outputPath": "/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/",
+>>>>>>> 6d896e99c70f4639a407691bdf5a436de34ee541
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Chantal Danyluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/callahanhirrel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
