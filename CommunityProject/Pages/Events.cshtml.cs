@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace CommunityProject.Pages
 {
-    public class AboutModel : PageModel
-    {
-        public string Message { get; set; }
-
-        public void OnGet()
-        {
-            Message = "Your application description page.";
-        }
-    }
+//    public class AboutModel : PageModel
+//    {
+//        public string Message { get; set; }
+//
+//        public void OnGet()
+//        {
+//            Message = "Your application description page.";
+//        }
+//    }
 }
