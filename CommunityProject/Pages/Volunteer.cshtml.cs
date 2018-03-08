@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace CommunityProject.Pages
 {
-    public class EventsModel : PageModel
+    public class VolunteerModel : PageModel
     {
         public string Message { get; set; }
 

@@ -6,4 +6,148 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<html>
+<head><style type="text/css">body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+paragraph {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #495466;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  background-color: #495456;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  color: white;
+  padding: 0 20px;
+  margin: 0;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+  background-color: #495466;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+.btn-group button {
+    background-color: #495466; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10% 20%; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #495499;
+}
+.boxed {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10% 20%;
+  width: 100%;
+  display: block;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #e8dfe0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+.table { border:1px solid black; padding:5px; width:400px; overflow:hidden; }
+.left { float:left; width:20%; }
+.right { float:right; width:70%;}
+
+.main{float:left;}
+.event-display{
+  float: right;
+}
+
+</style>
+
+
+
+  <title>CHDC</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+  <div class="table">
+    <div class="left">
+      <div class="btn-group">
+        <div class="boxed">
+          <b>Events:</b>
+        </div>
+        
+        <button><a href="http://localhost:54736/Events2">Bowl-a-thon</a>
+</button>
+        <button><a href="http://localhost:54736/Events2">Health Fair</a>
+</button>
+        <button><a href="http://localhost:54736/Events2">Appreciation Luncheon</a>
+</button>
+        <button><a href="http://localhost:54736/Events2">Fishing Derby</a>
+</button>
+        <button><a href="http://localhost:54736/Events2">5k Walkathon</a>
+</button>
+        <button><a href="http://localhost:54736/Events2">Polar Express</a>
+</button>
+      </div>
+    </div>
+    <div class="right">
+      <span class="event-display">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+    </div>
+  </div>
+</body>

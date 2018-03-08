@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Default1",
+      "appliesTo": "CommunityProject/Pages/Default1.aspx",
+      "type": "launch"
+    }
+  ]
+}
