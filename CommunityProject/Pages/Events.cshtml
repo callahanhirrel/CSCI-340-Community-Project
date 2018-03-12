@@ -23,6 +23,24 @@ header {
   background-color: #202020;
 }
 
+header .row,
+footer .row {
+  display: flex;
+  background-color: #202020;
+  align-items: center;
+}
+
+.button {
+  background-color: #202020; 
+  color: white;
+    border: 5;
+    border-color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 header h1 {
   font-weight: 700;
@@ -50,13 +68,15 @@ section .row img {
 .col-md-6 {
   margin: 0 0 30px;
 }
+
 .btn-group button {
-    background-color: #202020; /* Green background */
+    background-color: #202020; /* Blue background */
     border: 1px solid black; /* Green border */
     color: white; /* White text */
-    padding: 10% 20%; /* Some padding */
+    padding: 10% 10%; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 100%; /* Set a width if needed */
+    width: 100%; /* Standardized width so the buttons are the same size*/
+    height: 75px; /* Standardized height so buttons are the same size */
     display: block; /* Make the buttons appear below each other */
 }
 
@@ -103,8 +123,9 @@ section .row img {
   float: right;
 }
 
-</style>
-
+.btn-group current {
+  background-color:#1bd115;
+}</style>
 
 
   <title>CHDC</title>
@@ -124,10 +145,8 @@ section .row img {
           <b>Events:</b>
         </div>
         
-        <button><a href="http://localhost:54736/Events2">Bowl-a-thon</a>
-</button>
-        <button><a href="http://localhost:54736/Events2">Health Fair</a>
-</button>
+        <button class="registerbowl" ,="" style="float: right;" button="" onclick="viewBowl()">Bowl-A-Thon</button>
+        <button class="healfair" ,="" style="float: right;" button="" onclick="viewHealth()">Health Fair</button>
         <button><a href="http://localhost:54736/Events2">Appreciation Luncheon</a>
 </button>
         <button><a href="http://localhost:54736/Events2">Fishing Derby</a>
@@ -138,16 +157,29 @@ section .row img {
 </button>
       </div>
     </div>
-     <div class="right">
+     <div class="right" id="view">
       <div class="col-md-6">
        <img src="http://via.placeholder.com/350x150" style="width:750px;height:250px">
       </div>
       <span class="event-display">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p id="demo">Bowlers of all ages are invited to particpate! Begin forming a team with your family and friends and practicing your bowling skills! <br> Teams must consist of four (4) bowlers. There are 24 lanes and we hope to fill all lanes! The Benefit Bowl-A-Thon is scheduled for March 3, 20xx, from 3-5 pm at the Conway Family Bowl. The entry fee is $200 per team, or $50 per individual. Teams will receive free bowling, t-shirts, show rental, refreshments, and a chance to win door prizes. For teams raising $600 or more by 4:00 pm March 10, 20xx will be eligible to win the TRVELLING TROPHY and a group pizza party.<br> If you would like to participate, simply complete the entry form and then go get those pledges!<br></p>
+        <div class="button" id="register"><a href="http://localhost:54736/Bowlathon">Sign Up!</a></div>
     </span>
       <div>
-        <button class="registerbutton", style="float: right;">Register Now</button>
+
+        
       </div>
     </div>
   </div>
-</body>
+
+
+
+<script>
+function viewBowl() {
+    document.getElementById("demo").innerHTML = "Bowlers of all ages are invited to particpate! Begin forming a team with your family and friends and practicing your bowling skills! <br> Teams must consist of four (4) bowlers. There are 24 lanes and we hope to fill all lanes! The Benefit Bowl-A-Thon is scheduled for March 3, 20xx, from 3-5 pm at the Conway Family Bowl. The entry fee is $200 per team, or $50 per individual. Teams will receive free bowling, t-shirts, show rental, refreshments, and a chance to win door prizes. For teams raising $600 or more by 4:00 pm March 10, 20xx will be eligible to win the TRVELLING TROPHY and a group pizza party.<br> If you would like to participate, simply complete the entry form and then go get those pledges!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Bowlathon\">Sign Up!</a>";
+}
+
+  function viewHealth() {
+    document.getElementById("demo").innerHTML = "It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/healthfair\">Become a Vendor!</a>";
+  
+}</script></body>

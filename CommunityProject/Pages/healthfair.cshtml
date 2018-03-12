@@ -1,0 +1,118 @@
+﻿@page
+@model healthfairModel
+@{
+    ViewData["Title"] = "Health Fair";
+}
+<h2>@ViewData["Title"]</h2>
+
+<html>
+<head><style type="text/css">h4 {text-align:center;}</style>
+
+</head><body>
+
+  
+    <title>HealthFair</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  
+  <section class="container">
+    <h1 align="center">Conway Human Development Center's Community Health Fair Vendor Registration Form</h1>
+    <h4>Wednesday April 18,2018</h4>
+    <h4>8:00am-12:00pm</h4>
+    <h4>CHDC Gymnasium</h4>
+    <h4><b><u>You must read and agree to the CHDC Health Fair Rules and Regulations listed at the bottom of the application.</u></b></h4>
+    <form action="/health-fair-form-page" method="post">
+      <div class="form-group">
+        <label for="agency">Agency: </label>
+        <input type="text" class="form-control" id="agency" name="agency_name">
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact Person:</label>
+        <input type="text" class="form-control" id="contact" name="contact_person">
+      </div>
+      <div class="form-group">
+        <label for="address">Street Address:</label>
+        <input type="text" class="form-control" id="address" name="streat_address">
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" class="form-control" id="city" name="city">
+        <label for="state">State:</label>
+        <input type="text" class="form-control" id="state" name="state">
+        <label for="zip">Zip Code:</label>
+        <input type="number" class="form-control" id="zip" name="zip_code">
+      </div>
+      <div class="form-group">
+        <label for="Email">Email Address:</label>
+        <input type="email" class="form-control" id="email" name="email_address">
+      </div>
+      <div class="form-group">
+        <label for="telephone">Phone Number:</label>
+        <input type="tel" class="form-control" id="telephone" name="phone_number">
+        <label for="fax"> Fax Number:</label>
+        <input type="tel" class="form-control" id="fax" name="fax_number">
+      </div>
+      <div class="form-group">
+        <label for="electricity">Electricity Needed?:</label>
+        <div class="radio-inline">
+          <label class="radio-inline"><input type="radio" class="radio" id="electricity" name="electricity_needed">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <label class="radio-inline"><input type="radio" class="radio" id="electricity" name="electricity_needed">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="door prize">I can provide a door prize:</label>
+        <div class="radio-inline">
+          <label class="radio-inline"><input type="radio" class="radio" id="door_prize" name="door_prize">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <label class="radio-inline"><input type="radio" class="radio" id="door_prize" name="door_prize">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="prize_list">Example of door prize or give-a-ways you plan to distribute (No Sales Permitted):</label>
+        <textarea class="form-control" id="prize_list" name="prize_list"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="statement">Do you need a statement for your tax deductible gift?:</label>
+        <div>
+          <div class="radio-inline">
+            <label class="radio-inline"><input type="radio" class="radio" id="statement" name="statmenet">Yes </label>
+            <label>If yes, then enter the $ value of the gift<input type="number" class="form-control" id="statement_amount" name="statement_amount"></label>
+          </div>
+          <div class="radio-inline">
+            <label class="radio-inline"><input type="radio" class="radio" id="statement" name="statmenet">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Donation">Gift Donated:</label>
+        <input type="text" class="form-control" id="donation" name="gift_donated">
+      </div>
+      <div class="form-group">
+        <label for="receipt">Receipt for donations will be made to above vender name/address unless otherwise requested. We will have receipts available for pick up at the CHDC Volunteer Council Booth or mailed to you at your request:</label>
+        <div class="radio-inline">
+          <label class="radio-inline"><input type="radio" class="radio" id="receipt" name="receipt">Will Pick Up</label>
+        </div>
+        <div class="radio-inline">
+          <label class="radio-inline"><input type="radio" class="radio" id="receipt" name="receipt">Please Mail to Me</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="representations">Types of health, fitness and I, or wellness activity you or your company represent(s):</label>
+        <textarea class="form-control" id="representations" name="representations"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="special_requests">Other Special Request/Needs:</label>
+        <textarea class="form-control" id="requests" name="special_requests"></textarea>
+      </div>
+    </form>
+
+  </section>
+
+
+
+<script></script></body>
