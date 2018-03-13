@@ -182,7 +182,7 @@ section .row img {
 
         <input type="radio" name="bowlChoice" value="benefitBowler"> I have sent a donation of $<input type="number" name="bowlDonation" value="" style="width: 50px"> to sponsor Benefit Bowler <input type="text" name="bowlerName" value="" style="width: 100px">. <br>
 
-        <input type="radio" name="bowlChoice" value="participate" id="butParticipate" onclick="show2();"> I plan to participate in the Benefit Bowl event on Friday, March 2, 20xx. <br>
+        <input type="radio" name="bowlChoice" value="participate" id="butParticipate" onclick="show2()"> I plan to participate in the Benefit Bowl event on Friday, March 2, 20xx. <br>
           
           
         </div>
@@ -247,14 +247,14 @@ Donations are accepted the following ways:<br>
 </section>
 
 
-<script>$(document).ready(() => {
-
-   $('input[type=radio][name=bowlChoice]').change(function(){
+<script>
+   function show2() {
      if (this.value == "participate") {
         $('.boxed').css('display', 'block');
        $('.hid').css('display', 'block');
      }else {
        $('.boxed').css('display', 'none');
      }
-      });
-});</script></body>
+   }
+</script>
+</body>
