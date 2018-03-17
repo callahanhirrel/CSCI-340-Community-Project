@@ -3,6 +3,17 @@
 @{
     ViewData["Title"] = "Bowl-A-Thon";
 }
+
+<!-- 
+@{
+    Validation.RequireField("Phone", "A phone number is required");
+    Validation.RequireField("Address", "A street address is required");
+    Validation.RequireField("City", "A city is required");
+    Validation.RequireField("State", "Please choose a state");
+    Validation.RequireField("Zip", "A zip code is required");
+}
+-->
+
 <h2>@ViewData["Title"]</h2>
 
 <html>
@@ -107,13 +118,13 @@ section .row img {
       
          <div class="row">
       <div class="col-sm-3">
-        Address: <input type="text" name="Name" value="">
+        Address: <input type="text" name="Address" value="">
       </div>
       <div class="col-sm-3">
         City: <input type="text" name="City" value="">
       </div>
         <div class="col-sm-3">
-        State:<select>
+        State:<select name="State">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -248,13 +259,6 @@ Donations are accepted the following ways:<br>
 
 
 <script>
-   function show2() {
-     if (this.value == "participate") {
-        $('.boxed').css('display', 'block');
-       $('.hid').css('display', 'block');
-     }else {
-       $('.boxed').css('display', 'none');
-     }
-   }
+   $('input[type=radio][name=bowlChoice]').change(function(){      if (this.value == "participate") {         $('.boxed').css('display', 'block');        $('.hid').css('display', 'block');      }else {        $('.boxed').css('display', 'none');      }       }); 
 </script>
 </body>

@@ -4732,6 +4732,15 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Validation/2.4.18": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Validation.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "type": "package",
         "dependencies": {
@@ -9528,6 +9537,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Validation/2.4.18": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Validation.dll": {}
         }
       },
       "WindowsAzure.Storage/8.1.4": {
@@ -14582,6 +14600,15 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Validation/2.4.18": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Validation.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "type": "package",
         "dependencies": {
@@ -19632,6 +19659,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Validation/2.4.18": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Validation.dll": {}
         }
       },
       "WindowsAzure.Storage/8.1.4": {
@@ -28496,6 +28532,36 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Validation/2.4.18": {
+      "sha512": "NfvWJ1QeuZ1FQCkqgXTu1cOkRkbNCfxs4Tat+abXLwom6OXbULVhRGp34BTvVB4XPxj6VIAl7KfLfStXMt/Ehw==",
+      "type": "package",
+      "path": "validation/2.4.18",
+      "files": [
+        "README.md",
+        "lib/net20/Validation.dll",
+        "lib/net20/Validation.xml",
+        "lib/net40/Validation.dll",
+        "lib/net40/Validation.xml",
+        "lib/net45/Validation.dll",
+        "lib/net45/Validation.xml",
+        "lib/netstandard1.0/Validation.dll",
+        "lib/netstandard1.0/Validation.xml",
+        "lib/netstandard1.3/Validation.dll",
+        "lib/netstandard1.3/Validation.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Validation.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Validation.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Validation.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Validation.xml",
+        "tools/2013/RequiresNotNull.snippet",
+        "tools/2013/RequiresNotNullOrEmpty.snippet",
+        "tools/2015/RequiresNotNull.snippet",
+        "tools/2015/RequiresNotNullOrEmpty.snippet",
+        "tools/install_snippets.cmd",
+        "tools/uninstall_snippets.cmd",
+        "validation.2.4.18.nupkg.sha512",
+        "validation.nuspec"
+      ]
+    },
     "WindowsAzure.Storage/8.1.4": {
       "sha512": "W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "type": "package",
@@ -28522,7 +28588,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Validation >= 2.4.18"
     ]
   },
   "packageFolders": {
@@ -28573,6 +28640,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.5"
+          },
+          "Validation": {
+            "target": "Package",
+            "version": "2.4.18"
           }
         },
         "imports": [
