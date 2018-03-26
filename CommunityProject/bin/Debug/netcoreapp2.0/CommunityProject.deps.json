@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "7c6491b782d123313f51c5d8be7df63ef9431974"
+    "signature": "e71cca5d53039dd2d7f7a9721e7e3f732e3eb372"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,8 @@
       "CommunityProject/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "Validation": "2.4.18"
         },
         "runtime": {
           "CommunityProject.dll": {}
@@ -3780,6 +3781,14 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "Validation/2.4.18": {
+        "runtime": {
+          "lib/netstandard1.3/Validation.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Validation.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
@@ -5972,6 +5981,13 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Validation/2.4.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfvWJ1QeuZ1FQCkqgXTu1cOkRkbNCfxs4Tat+abXLwom6OXbULVhRGp34BTvVB4XPxj6VIAl7KfLfStXMt/Ehw==",
+      "path": "validation/2.4.18",
+      "hashPath": "validation.2.4.18.nupkg.sha512"
     },
     "WindowsAzure.Storage/8.1.4": {
       "type": "package",
