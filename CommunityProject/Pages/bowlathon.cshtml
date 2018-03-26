@@ -4,15 +4,7 @@
     ViewData["Title"] = "Bowl-A-Thon";
 }
 
-<!-- 
-@{
-    Validation.RequireField("Phone", "A phone number is required");
-    Validation.RequireField("Address", "A street address is required");
-    Validation.RequireField("City", "A city is required");
-    Validation.RequireField("State", "Please choose a state");
-    Validation.RequireField("Zip", "A zip code is required");
-}
--->
+
 
 <h2>@ViewData["Title"]</h2>
 
@@ -113,19 +105,15 @@ section .row img {
       
          <div class="row">
       <div class="col-sm-3">
-<<<<<<< HEAD
        <label for="address">Address:</label>
         <input type="text" class="form-control" id="address" name="user-address">
-=======
         Address: <input type="text" name="Address" value="">
->>>>>>> 3be3d091e22984ea886cc2e7eab0d29ec68c4aa8
       </div>
       <div class="col-sm-3">
        <label for="city">City:</label>
         <input type="text" class="form-control" id="city" name="user-city">
       </div>
         <div class="col-sm-3">
-<<<<<<< HEAD
 <label for="state" class="col-sm-2 control-label">State</label>
 	<div class="col-sm-10">
 		<select class="form-control" id="state" name="state">
@@ -184,7 +172,6 @@ section .row img {
 			<option value="WY">Wyoming</option>
 		</select>
 	</div>
-=======
         State:<select name="State">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
@@ -251,16 +238,14 @@ section .row img {
       <div class="col-sm-10">
       <b>
         <div class="options">
-<<<<<<< HEAD
-=======
+
         <input type="radio" name="bowlChoice" value="residenceBehalf"> I pledge to make a donation to the 20xx Benefit Bowl-A-Thon of $<input type="number" name="resDonation" value="" style="width: 50px"> on behalf of residence <input type="text" name="residenceName" value="" style="width: 100px">. <br>
 
         <input type="radio" name="bowlChoice" value="benefitBowler"> I have sent a donation of $<input type="number" name="bowlDonation" value="" style="width: 50px"> to sponsor Benefit Bowler <input type="text" name="bowlerName" value="" style="width: 100px">. <br>
 
         <input type="radio" name="bowlChoice" value="participate" id="butParticipate" onclick="show2()"> I plan to participate in the Benefit Bowl event on Friday, March 2, 20xx. <br>
           
->>>>>>> 3be3d091e22984ea886cc2e7eab0d29ec68c4aa8
-          
+
         </div>
       </b></div><b>
     </b></div><b>
@@ -329,7 +314,6 @@ Donations are accepted the following ways:<br>
       </section>
       
 
-<<<<<<< HEAD
   
 
 <script>   $('input[type=radio][name=payChoice]').change(function(){
@@ -339,9 +323,7 @@ Donations are accepted the following ways:<br>
         $('.hid').css('display', 'none');
      }
       });</script></body>
-=======
 <script>
    $('input[type=radio][name=bowlChoice]').change(function(){      if (this.value == "participate") {         $('.boxed').css('display', 'block');        $('.hid').css('display', 'block');      }else {        $('.boxed').css('display', 'none');      }       }); 
 </script>
 </body>
->>>>>>> 3be3d091e22984ea886cc2e7eab0d29ec68c4aa8
