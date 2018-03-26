@@ -1,0 +1,9 @@
+
+*.json
+CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.dev.json
+CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.csproj.CoreCompileInputs.cache
+CommunityProject/obj/project.assets.json
+CommunityProject/obj/CommunityProject.csproj.nuget.g.targets
+CommunityProject/obj/CommunityProject.csproj.nuget.g.props
+CommunityProject/obj/CommunityProject.csproj.nuget.cache
+CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.dev.json
