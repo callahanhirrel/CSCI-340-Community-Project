@@ -42,6 +42,19 @@ footer .row {
     font-size: 16px;
 }
 
+.button-hid{
+  background-color: #202020; 
+  color: white;
+    border: 5;
+    border-color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   visibility: hidden;
+}
+
 header h1 {
   font-weight: 700;
   color: white;
@@ -116,7 +129,7 @@ section .row img {
 }
 .table { border:1px solid black; padding:5px; width:400px; overflow:hidden; }
 .left { float:left; width:20%; }
-.right { float:right; width:70%;}
+.right { float:right; width:70%; }
 
 .main{float:left;}
 .event-display{
@@ -135,7 +148,7 @@ section .row img {
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-
+  
 <body>
 
   <div class="table">
@@ -146,11 +159,8 @@ section .row img {
         </div>
         
         <button class="registerbowl" ,="" style="float: right;" button="" onclick="viewBowl()">Bowl-A-Thon</button>
-        <button class="healfair" ,="" style="float: right;" button="" onclick="viewHealth()">Health Fair</button>
-        <button><a href="http://localhost:54736/Events2">Appreciation Luncheon</a>
-</button>
-        <button><a href="http://localhost:54736/Events2">Fishing Derby</a>
-</button>
+        <button class="healffair" ,="" style="float: right;" button="" onclick="viewHealth()">Health Fair</button>
+        <button class="fishingderby" ,="" style="float: right;" button="" onclick="viewFishing()">Fishing Derby</button>
         <button><a href="http://localhost:54736/Events2">5k Walkathon</a>
 </button>
         <button><a href="http://localhost:54736/Events2">Polar Express</a>
@@ -158,13 +168,15 @@ section .row img {
       </div>
     </div>
      <div class="right" id="view">
-      <div class="col-md-6">
+      <div class="col-md-9">
        <img src="http://via.placeholder.com/350x150" style="width:750px;height:250px">
-      </div>
+      
       <span class="event-display">
-      <p id="demo">Bowlers of all ages are invited to particpate! Begin forming a team with your family and friends and practicing your bowling skills! <br> Teams must consist of four (4) bowlers. There are 24 lanes and we hope to fill all lanes! The Benefit Bowl-A-Thon is scheduled for March 3, 20xx, from 3-5 pm at the Conway Family Bowl. The entry fee is $200 per team, or $50 per individual. Teams will receive free bowling, t-shirts, show rental, refreshments, and a chance to win door prizes. For teams raising $600 or more by 4:00 pm March 10, 20xx will be eligible to win the TRVELLING TROPHY and a group pizza party.<br> If you would like to participate, simply complete the entry form and then go get those pledges!<br></p>
-        <div class="button" id="register"><a href="http://localhost:54736/Bowlathon">Sign Up!</a></div>
-    </span>
+      <p id="demo">It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br></p>
+        <div class="button" id="register"><a href="http://localhost:54736/healthfair">Become a Vendor</a></div>
+        <div class="button-hid" id="sponsor"><a href="http://localhost:54736/Sponsors">Sponsor</a></div>
+        </span></div>
+    
       <div>
 
         
@@ -173,13 +185,28 @@ section .row img {
   </div>
 
 
+<script>$(document).ready(() => {
+  
+  //$('.button').on('click', event => {
+  //   document.getElementById("register").innerHTML = "Stop";
+     
+ //});  
+});
 
-<script>
 function viewBowl() {
-    document.getElementById("demo").innerHTML = "Bowlers of all ages are invited to particpate! Begin forming a team with your family and friends and practicing your bowling skills! <br> Teams must consist of four (4) bowlers. There are 24 lanes and we hope to fill all lanes! The Benefit Bowl-A-Thon is scheduled for March 3, 20xx, from 3-5 pm at the Conway Family Bowl. The entry fee is $200 per team, or $50 per individual. Teams will receive free bowling, t-shirts, show rental, refreshments, and a chance to win door prizes. For teams raising $600 or more by 4:00 pm March 10, 20xx will be eligible to win the TRVELLING TROPHY and a group pizza party.<br> If you would like to participate, simply complete the entry form and then go get those pledges!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Bowlathon\">Sign Up!</a>";
+    document.getElementById("demo").innerHTML = "The Volunteer Council Bowl-A-Thon is our centers 2nd largest fundraiser of the year.  On average this event will raise over $13,000 each year and brings in over 90 participants. <br>This event is always hosted on the first Friday of March at 3pm at Conway Family Bowl. <br> There are awards, door prizes, food from sponsoring restaurants such as Pizza Hut, Ed’s bakery, Wal-Mart Deli and Subway.  Plaques, trophies and pizza parties can be won as well as door prizes. <br> If you would like to sign up or sponsor the events, please click the buttons below!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Bowlathon\">Sign Up</a>";
+  document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
+ $('.button-hid').css('visibility', 'visible');
 }
 
   function viewHealth() {
-    document.getElementById("demo").innerHTML = "It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/healthfair\">Become a Vendor!</a>";
-  
-}</script></body>
+    document.getElementById("demo").innerHTML = "It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/healthfair\">Become a Vendor</a>";
+    $('.button-hid').css('visibility', 'hidden');
+}
+
+function viewFishing() {
+    document.getElementById("demo").innerHTML = "The fishing derby is a fun, community driven event hosted in July. Materials are provided, and awards are given for largest fish caught, most fish caught, and first fish caught.<br> Over 50 anglers will participate in this event! <br> If you would like to sign up or sponsor the events, please click the buttons below!<br> "; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/fishingderby\">Sign Up</a>";
+   document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
+ $('.button-hid').css('visibility', 'visible');
+}
+</script></body>

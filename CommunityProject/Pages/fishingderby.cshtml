@@ -1,7 +1,7 @@
 ﻿@page
-@model bowlathonModel
+@model fishingderbyModel
 @{
-    ViewData["Title"] = "Bowl-A-Thon";
+    ViewData["Title"] = "Fishing Derby";
 }
 <h2>@ViewData["Title"]</h2>
 
@@ -69,10 +69,9 @@ section .row img {
 
   
     <section class="container">
-       <h1 align="center">Conway Human Development Center's Community Bowl-A-Thon Registration Form</h1>
-    <h4>Friday March 2, 20XX</h4>
-    <h4>3:00pm-5:00pm</h4>
-    <h4>Conway Family Bowl</h4>
+      <h1 align="center">Conway Human Development Center's Community Annaul Fishing Derby Registration Form</h1>
+    <h4>Saturday July 30, 20XX</h4>
+    <h4>7:30am</h4>
       <div class="row">
       <div class="col-sm-4">
       </div>
@@ -86,11 +85,11 @@ section .row img {
       
      <div class="row">
       <div class="col-sm-2">
-          <label for="name">First Name:</label>
+          <label for="name">Anglers First Name:</label>
         <input type="text" class="form-control" id="name" name="user-name">
       </div>
        <div class="col-sm-2">
-          <label for="name">Last Name:</label>
+          <label for="name">Anglers Last Name:</label>
         <input type="text" class="form-control" id="name" name="user-name">
       </div>
       <div class="col-sm-4">
@@ -177,50 +176,23 @@ section .row img {
     </div>
       
       <div class="row">
-      <div class="col-sm-10">
-      <b>
-        <div class="options">
-          
+      <div class="col-sm-6">
+       <label for="zip">Email</label>
+        <input type="text" class="form-control" id="email" name="user-email">
         </div>
-      </b></div><b>
-    </b></div><b>
-      
-        <div class="row">
-      <div class="col-sm-10">
-        <div class="boxed">
-        <p>Benefit Bowl-A-Thon 20xx Team Entry Form</p>
-        
-      <div class="options">
-        <div class="row">
-          <div class="col-sm-3">
-      <label for="team">Team Name:</label>
-        <input type="text" class="form-control" id="team" name="user-team"><br>
-        </div>
-        <div class="row">
-      T-Shirt Size:<select>
-  <option value="small">S</option>
-  <option value="medium">M</option>
-  <option value="large">L</option>
-  <option value="2x-large">2XL</option>
-  <option value="3x-large">3XL</option>
-  <option value="4x-large">4XL</option>
-  <option value="y-medium">Youth M</option>
-  <option value="y-large">Youth L</option>
-          </select></div>
-        <div class="row">
-          <p> Payment: </p>
-            <input type="radio" name="payChoice" value="in-person" id="in-person"> I will be paying in person.<br>
-          <input type="radio" name="payChoice" value="online" id="online"> I will be paying online.<br>
-          </div>
-          
-        </div>
-
-        </div>
+        <div class="col-sm-6">
+       <label for="zip">Date of Birth (MMDDYY)</label>
+        <input type="text" class="form-control" id="email" name="user-email">
+      </div>
     </div>
-        </div>
+      
+    </div>
+        
      <div class="row">     
      <div class="col-sm-10">
        <input type="checkbox" name="consent" value="Bike"> I consent to have my picture taken at this event<br>
+       <input type="checkbox" name="consent" value="Bike"> <b>
+In consideration of my acceptance of this form, I hereby for myself, my administrators, my heirs and assigns, waive and release any and all rights and claims for damages that I have against the organizers, their associates and representatives of this Fishing Derby for any and all injuries suffered by me or my child while taking part in this event. I grant permission to CHDC Volunteer Council to use my photographs, motion pictures, recordings or other record of this event for the Council’s legitimate purpose.</b><br>
        </div></div>
           <div class="row">     
      <div class="col-sm-10">
@@ -228,33 +200,13 @@ section .row img {
     </div>
           </div>
           
-</div></b></div></form></section><b>
+</form></section>
       
       
-       </b><section class="container"><b>
-      </b><div class="hid"><b>     
-     </b><div class="col-sm-10"><b>
-Note: A $50 individual or $200 for a 4-person team donation must be submitted to receive T-shirts. <br>
-       
-Donations are accepted the following ways:<br>
-       
-<ul>
-  <li>online by refilling this form to sponser Benefit Bowler for yourself or your team.</li>
-  <li>turned in person at the CHDC Volunteer's Council Office ahead of time.</li>
-  <li>turned in the day of the event by 2:30 pm at Conway Family Bowl.</li>
-  <li><a href="http://localhost:54736/Sponsors">through a sponsor pledge.</a></li>
-</ul>  
-       </b>
-        </div></div>
-      </section>
+      
+      
       
 
   
 
-<script>   $('input[type=radio][name=payChoice]').change(function(){
-     if (this.value == "in-person") {
-       $('.hid').css('display', 'block');
-     }else {
-        $('.hid').css('display', 'none');
-     }
-      });</script></body>
+<script></script></body>
