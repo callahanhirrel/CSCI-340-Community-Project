@@ -158,18 +158,15 @@ section .row img {
           <b>Events:</b>
         </div>
         
-        <button class="registerbowl" ,="" style="float: right;" button="" onclick="viewBowl()">Bowl-A-Thon</button>
-        <button class="healffair" ,="" style="float: right;" button="" onclick="viewHealth()">Health Fair</button>
-        <button class="fishingderby" ,="" style="float: right;" button="" onclick="viewFishing()">Fishing Derby</button>
-        <button><a href="http://localhost:54736/Events2">5k Walkathon</a>
-</button>
-        <button><a href="http://localhost:54736/Events2">Polar Express</a>
-</button>
+        <button class="registerbowl" style="float: right;" button="" onclick="viewBowl()">Bowl-A-Thon</button>
+        <button class="healffair" style="float: right;" button="" onclick="viewHealth()">Health Fair</button>
+        <button class="fishingderby" style="float: right;" button="" onclick="viewFishing()">Fishing Derby</button>
+        <button><a href="http://localhost:54736/Events2">Walk-A-Thon</a></button>
       </div>
     </div>
      <div class="right" id="view">
       <div class="col-md-9">
-       <img src="http://via.placeholder.com/350x150" style="width:750px;height:250px">
+       <img id="pic" src="images/health-fair-group.JPG" style="width:675px;height:500px">
       
       <span class="event-display">
       <p id="demo">It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br></p>
@@ -195,18 +192,21 @@ section .row img {
 
 function viewBowl() {
     document.getElementById("demo").innerHTML = "The Volunteer Council Bowl-A-Thon is our centers 2nd largest fundraiser of the year.  On average this event will raise over $13,000 each year and brings in over 90 participants. <br>This event is always hosted on the first Friday of March at 3pm at Conway Family Bowl. <br> There are awards, door prizes, food from sponsoring restaurants such as Pizza Hut, Ed’s bakery, Wal-Mart Deli and Subway.  Plaques, trophies and pizza parties can be won as well as door prizes. <br> If you would like to sign up or sponsor the events, please click the buttons below!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Bowlathon\">Sign Up</a>";
-  document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
+    document.getElementById("pic").src = "http://augstudy.com/images/theme/impress/example_img.png";
+    document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
  $('.button-hid').css('visibility', 'visible');
 }
 
   function viewHealth() {
     document.getElementById("demo").innerHTML = "It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/healthfair\">Become a Vendor</a>";
+    document.getElementById("pic").src = "images/health-fair-group.JPG";
     $('.button-hid').css('visibility', 'hidden');
 }
 
 function viewFishing() {
     document.getElementById("demo").innerHTML = "The fishing derby is a fun, community driven event hosted in July. Materials are provided, and awards are given for largest fish caught, most fish caught, and first fish caught.<br> Over 50 anglers will participate in this event! <br> If you would like to sign up or sponsor the events, please click the buttons below!<br> "; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/fishingderby\">Sign Up</a>";
-   document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
+    document.getElementById("pic").src = "images/most-fish.jpg";
+    document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
  $('.button-hid').css('visibility', 'visible');
 }
 </script></body>
