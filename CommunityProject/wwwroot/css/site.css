@@ -42,18 +42,19 @@ header p {
 }
 
 .jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url('http://i852.photobucket.com/albums/ab88/freckleface130/chdc%20picture444_zpsevjng47v.jpg');
-  background-size: cover;
-  max-width: 1170;
-  display: block;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/chdc-front.jpg');
+    background-size: cover;
+    background-position: 50% 55%;
+    max-width: 1170;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-  color: #ffffff;
-  max-height: 300px;
-  height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+    color: #ffffff;
+    max-height: 300px;
+    height: 500px;
+    text-shadow: 0.25px 0.25px 0.25px #000000
 }
 
 
