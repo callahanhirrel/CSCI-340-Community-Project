@@ -1,12 +1,12 @@
 ﻿@page
 @model bowlathonModel
 @{
-    ViewData["Title"] = "Bowl-A-Thon";
+    ViewData["Title"] = "";
 }
 
 
 
-<h2>@ViewData["Title"]</h2>
+<h2></h2>
 
 <html>
 <head><style type="text/css">paragraph {
@@ -46,7 +46,8 @@ quote {
 .boxed {
   text-align: left;
   padding: 15px;
-  background-color: #e6e9f2;
+  border: 1px solid black;
+  background-color: rgb(252, 252, 252);
   display: block;
 }
 
@@ -72,6 +73,8 @@ section .row img {
 </head>
   
     <section class="container">
+  <div class="col-sm-12">
+  <div class="boxed">
        <h1 align="center">Conway Human Development Center's Community Bowl-A-Thon Registration Form</h1>
     <h4>Friday March 2, 20XX</h4>
     <h4>3:00pm-5:00pm</h4>
@@ -190,7 +193,6 @@ section .row img {
       
         <div class="row">
       <div class="col-sm-10">
-        <div class="boxed">
         <p>Benefit Bowl-A-Thon 20xx Team Entry Form</p>
         
       <div class="options">
@@ -213,7 +215,6 @@ section .row img {
           <input type="radio" name="payChoice" value="online" id="online"> I will be paying online.<br>
           </div>
           
-        </div>
 
         </div>
     </div>
@@ -247,6 +248,8 @@ Donations are accepted the following ways:<br>
        </b>
         </div></div></div>
       </section>
+</div>
+</div>
 
   
 

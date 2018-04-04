@@ -3,10 +3,18 @@
 @{
     ViewData["Title"] = "Health Fair";
 }
-<h2>@ViewData["Title"]</h2>
+<h2></h2>
 
 <html>
-<head><style type="text/css">h4 {text-align:center;}</style>
+<head><style type="text/css">h4 {text-align:center;}
+.boxed {
+  text-align: left;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: rgb(252, 252, 252);
+  display: block;
+}
+</style>
 
 </head><body>
 
@@ -18,12 +26,74 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   
   <section class="container">
-    <h1 align="center">Conway Human Development Center's Community Health Fair Vendor Registration Form</h1>
-    <h4>Wednesday April 18,2018</h4>
+  <div class="col-sm-12">
+  <div class="boxed">
+     <h1 align="center">CHDC's Community Health Fair Vendor Registration Form</h1>
+    <h4>Wednesday April 18, 20XX</h4>
     <h4>8:00am-12:00pm</h4>
     <h4>CHDC Gymnasium</h4>
-    <h4><b><u>You must read and agree to the CHDC Health Fair Rules and Regulations listed at the bottom of the application.</u></b></h4>
+    <h4><b><u>You must read and agree to the CHDC Health Fair Rules and Regulations.</u></b></h4>
     <form action="/health-fair-form-page" method="post">
+      <div class="rules">
+      <h1 align="center">CHDC HEATLH FAIR RULES AND REGULATIONS</h1>
+      <div>
+        <ol>
+          <li>
+            <b>INSTALLATION & DISMANTLING OF EXHIBITS:</b> Installation of booth(s) is to be complete prior to show opening. Exhibitor agrees not to distmantle booth(s) prior to 12 noon.
+          </li>
+          <li>
+            <b>SECURITY:</b> Exhibitors need to provide their own booth security during show hours.<u>IN NO EVENT does CHDC assume liability for loss or damage by any cause.</u>
+          </li>
+          <li>
+            <b>LIABILITY:</b> CHDC does not assume responsibility for any injury to person or property from any cause.
+          </li>
+          <li>
+            <b>PHOTOGRAPHS OF INDIVIDUALS SERVED:<u> Is strictly prohibited without prior written approval through this facility from the legal guardian or parent. </u></b>
+          </li>
+          <li>
+            <b>BOOTH SHARING:</b> Is permitted as approved by management if all parties are in agreement.
+          </li>
+          <li>
+            <b>ELECTRICITY:</b> There are limited booths available with access to electrical 110 volt hook up. Exhibitors need to request electricity on registration form if needed.
+          </li>
+          <li>
+            <b>DOOR PRIZES:</b> Drawing for prizes and/or giveaways must be completed by 12:00 Noon the day of health fair.
+          </li>
+          <li>
+            <b>FOOD AND BEVERAGES:</b> No food or drink items are to be distributed from any booth or left out on tables where residents can obtain them while passing by.
+          </li>
+          <li>
+            <b>CANCELLATIONS:</b> All booths / tables at the CHDC Health Fair are free to vendors. Any cancellations of vendors are asked to be made at least 3 weeks prior to the scheduled health fair date so that vendors on a waiting list can be contacted.
+          </li>
+          <li>
+            <b>BADGES:</b> Exhibitors are asked to maintain identification badges at all times. These may be as simple as a 'tape' name tag with your name and business.
+          </li>
+          <li>
+            <b>CARE OF THE BUILDING:</b> Acceptance of exhibit space makes it obligatory on the part of the exhibitor and any employee that they shall not deface, injure, or mar the building of the event facilities. Decorations, signs, banners, etc. may
+            not be taped, nailed, stapled, or otherwise fastened to ceilings, walls, doors, windows, painted surfaces, or columns.
+          </li>
+          <li>
+            <b>SAFETY GUIDELINES:</b> All exhibitors are expected to observe appropriate safety guidelines set by event facilities. All vendors are to check in providing picture identification to receive a visitor pass.
+          </li>
+          <li>
+            <b>INSURANCE:</b> Exhibitors should insure themselves against property loss, damage, liability for personal injury, at their own expense. Any items that are left out on table tops are assumed to be free, therefore, if you have items that are
+            not free, or are props, please secure them elsewhere or keep someone at your booth.
+          </li>
+          <li>
+            <b>INCLUDED WITH EVERY STANDARD BOOTH:</b> We provide (approx) 6ft x 2ft table, a white sheet / table cloth and 2 folding chairs.<p style="font-size:12px">*Decorations are left to the discretion of the vendor. If other accommodations are needed please indicate it on your form. Electricity is available on an as needed basis so please indicate if needed on form.</p>
+          </li>
+          <li>
+            <b>NO SELLING ITEMS / ANYTHING FROM YOUR BOOTH:</b> You may provide free items, samples, certificates, discount coupons, etc.
+          </li>
+          <li>
+            <b>NO FOOD OR DRINK SERVED FROM YOUR BOOTH FOR THE HEALTH AND SAFETY OF OUR RESIDENTS.</b>
+          </li>
+          <li>
+            <b>PLEASE ENJOY YOUR VISIT TO OUR CAMPUS.</b>
+          </li>
+        </ol>
+        </div>
+      </div><br></br>
       <div class="form-group">
         <label for="agency">Agency: </label>
         <input type="text" class="form-control" id="agency" name="agency_name">
@@ -71,35 +141,18 @@
         <div class="radio-inline">
           <label class="radio-inline"><input type="radio" class="radio" id="door_prize" name="door_prize">No</label>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="prize_list">Example of door prize or give-a-ways you plan to distribute (No Sales Permitted):</label>
-        <textarea class="form-control" id="prize_list" name="prize_list"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="statement">Do you need a statement for your tax deductible gift?:</label>
         <div>
-          <div class="radio-inline">
-            <label class="radio-inline"><input type="radio" class="radio" id="statement" name="statmenet">Yes </label>
-            <label>If yes, then enter the $ value of the gift<input type="number" class="form-control" id="statement_amount" name="statement_amount"></label>
-          </div>
-          <div class="radio-inline">
-            <label class="radio-inline"><input type="radio" class="radio" id="statement" name="statmenet">No</label>
-          </div>
+        <label for="prize value">If yes, enter the $ value of the door prize</label>
+        <input type="number" class="form-control" id="prize_value" name="prize_value">
         </div>
       </div>
+      
       <div class="form-group">
-        <label for="Donation">Gift Donated:</label>
+        <label for="Donation">Door Prize:</label>
         <input type="text" class="form-control" id="donation" name="gift_donated">
       </div>
       <div class="form-group">
-        <label for="receipt">Receipt for donations will be made to above vender name/address unless otherwise requested. We will have receipts available for pick up at the CHDC Volunteer Council Booth or mailed to you at your request:</label>
-        <div class="radio-inline">
-          <label class="radio-inline"><input type="radio" class="radio" id="receipt" name="receipt">Will Pick Up</label>
-        </div>
-        <div class="radio-inline">
-          <label class="radio-inline"><input type="radio" class="radio" id="receipt" name="receipt">Please Mail to Me</label>
-        </div>
+        <label for="receipt">Receipt for donations will be made to above vender name & address unless otherwise requested below. We will mail the receipt to you.</label>
       </div>
       <div class="form-group">
         <label for="representations">Types of health, fitness and I, or wellness activity you or your company represent(s):</label>
@@ -109,8 +162,13 @@
         <label for="special_requests">Other Special Request/Needs:</label>
         <textarea class="form-control" id="requests" name="special_requests"></textarea>
       </div>
+        <div class="form-check" align="right">
+          <label for="checkbox">I have read and agree to the above rules.
+          <input type="checkbox" class="form-check-input" id="agreementCheck"></label>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
     </form>
-
+</div></div>
   </section>
 
 

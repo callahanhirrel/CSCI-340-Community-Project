@@ -109,10 +109,17 @@ section .row img {
     background-color: #202020;
 }
 .boxed {
-  text-align: center;
+  text-align: left;
+  padding: 15px;
   border: 1px solid black;
-  padding: 10% 20%;
-  width: 100%;
+  background-color: rgb(252, 252, 252);
+  display: block;
+}
+
+.boxed2 {
+  text-align: left;
+  padding: 15px;
+  background-color: rgb(252, 252, 252);
   display: block;
 }
 
@@ -121,20 +128,17 @@ section .row img {
   border: 0px;
   color: #fbd1d5;
   text-shadow: none;
-  background-color: #ffffff;
 }
 
 .btn.btn-primary:hover {
-  color: #ffffff;
   background-color: #fbd1d5;
 }
 
 .btn-secondary {
   background-color: #e8dfe0;
-  color: #ffffff;
   margin: 0 0 30px;
 }
-.table { border:1px solid black; padding:5px; width:400px; overflow:hidden; }
+.table {  padding:5px; width:400px; overflow:hidden; }
 .left { float:left; width:20%; }
 .right { float:right; width:70%; }
 
@@ -157,7 +161,8 @@ section .row img {
 </head>
   
 <body>
-
+  <div class="col-sm-12">
+  <div class="boxed">
   <div class="table">
     <div class="left">
       <div class="btn-group">
@@ -193,7 +198,10 @@ section .row img {
         
       </div>
     </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
 
 
 <script>$(document).ready(() => {
