@@ -7,23 +7,147 @@
 <h3></h3>
 
 <html>
-<head><style type="text/css">
+<head><style type="text/css">paragraph {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+h4 {text-align:center;}
+
+names {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 11.5px;
+  padding: 0 80px;
+}
+
+quote {
+  font-family: 'Garamond', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  font-style: bold;
+  padding: 0 30px;
+  text-align: center;
+}
+.row {
+  padding: 10px;
+}
+
+.options {
+    padding-left: 50px;
+}
+
+
 .boxed {
+  border: 2px solid black;
+  border-radius: 8px;
   text-align: left;
   padding: 15px;
-  border: 1px solid black;
   background-color: rgb(252, 252, 252);
   display: block;
 }
-</style></head>
 
-  <div class="col-sm-12">
-  <div class="boxed">
+.hid {
+  text-align: left;
+  padding: 15px;
+  font-weight: bold;
+  display: none;
+}
 
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+.box {
+  border: 2px solid black;
+  border-radius: 8px;
+}
 
-
-<p>Use this area to provide additional information.</p>
+.headerimg {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Volunteering_%288618932799%29.jpg/1200px-Volunteering_%288618932799%29.jpg");
+  background-size: cover;
+  width: 1120px;
+  height: 700px;
+}</style>
+  
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 align="center">About Us - CHDC Volunteer Council</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headerimg"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 boxed">
+          <h3>Schedule</h3>
+          <ul>
+            <li>Meets on the 3rd Thursday of each month
+            </li><li>11:30 A.M. to 12:00 P.M.: Lunch</li>
+            <li>12:00 P.M. to 1:00 P.M.: Meeting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 boxed">
+          <h3>Description</h3>
+          <p>
+            The CHDC Volunteer Council hosts all of the fundraising and community outreach events on behalf of the CHDC, including:
+          </p>
+          <ul>
+            <li>Walk-a-thon</li>
+            <li>Bowl-a-thon</li>
+            <li>Polar Express</li>
+            <li>Fishing Derby</li>
+            <li>Appreciation Luncheon</li>
+          </ul>
+          <p>
+            The Volunteer Council's mission is to provide resources to the residents of the CHDC in order to meet their special needs, to provide them with long-term benefits, and to improve their overall quality of life. Council members advocate for the residents of the CHDC and inform our surrounding communities about the needs and abilities of the individuals served; new members are always welcome!
+          </p>
+          <p>
+            The Volunteer Council has provided many things for the residents of the CHDC over the past 36 years, including:
+          </p>
+          <ul>
+            <li>Family Visitation Complex</li>
+            <li>Awnings over sidewalks</li>
+            <li>Renovations and improvements to the swimming pool</li>
+            <li>Equipment for the physical therapy department</li>
+            <li>An indoor therapeutic pool and fitness complex</li>
+            <li>Additional classrooms and classroom supplies</li>
+            <li>Fencing along the front of campus</li>
+            <li>New playground equipment for the park</li>
+            <li>PA system for the CHDC Chapel</li>
+            <li>A triplex for parents to use while in town visiting their loved one</li>
+            <li>Park pavilion renovations</li>
+            <li>New gym equipment</li>
+            <li>Video surveillance equipment</li>
+            <li>Christmas gifts</li>
+            <li>Pavilion equipped with a stage</li>
+            <li>Train tunnel</li>
+            <li>Remodeled century flyer listed on the National Historic Register of places</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+<script>   $('input[type=radio][name=payChoice]').change(function(){
+     if (this.value == "in-person") {
+       $('.hid').css('display', 'block');
+     }else {
+        $('.hid').css('display', 'none');
+     }
+      });</script></body>
 
 </div></div>
