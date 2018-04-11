@@ -9,22 +9,22 @@ using CommunityProject.Models;
 
 namespace CommunityProject.Controllers
 {
-    public class DBController : Controller
+    public class WalkController : Controller
     {
         private readonly DatabaseContext _context;
 
-        public DBController(DatabaseContext context)
+        public WalkController(DatabaseContext context)
         {
             _context = context;
         }
 
-        // GET: DB
+        // GET: Walk
         public async Task<IActionResult> Index()
         {
-            return View(await _context.GenInfo.ToListAsync());
+            return View(await _context.WalkathonInfo.ToListAsync());
         }
 
-        // GET: DB/Details/5
+        // GET: Walk/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +32,39 @@ namespace CommunityProject.Controllers
                 return NotFound();
             }
 
-            var genInfo = await _context.GenInfo
+            var walkathonInfo = await _context.WalkathonInfo
                 .SingleOrDefaultAsync(m => m.ID == id);
-            if (genInfo == null)
+            if (walkathonInfo == null)
             {
                 return NotFound();
             }
 
-            return View(genInfo);
+            return View(walkathonInfo);
         }
 
-        // GET: DB/Create
+        // GET: Walk/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: DB/Create
+        // POST: Walk/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,FirstName,LastName,Email,Phone,Address,City,State,ZIP,ShirtSize,PicConsent")] GenInfo genInfo)
+        public async Task<IActionResult> Create([Bind("ID,CustID,Payment")] WalkathonInfo walkathonInfo)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(genInfo);
+                _context.Add(walkathonInfo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(genInfo);
+            return View(walkathonInfo);
         }
 
-        // GET: DB/Edit/5
+        // GET: Walk/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +72,22 @@ namespace CommunityProject.Controllers
                 return NotFound();
             }
 
-            var genInfo = await _context.GenInfo.SingleOrDefaultAsync(m => m.ID == id);
-            if (genInfo == null)
+            var walkathonInfo = await _context.WalkathonInfo.SingleOrDefaultAsync(m => m.ID == id);
+            if (walkathonInfo == null)
             {
                 return NotFound();
             }
-            return View(genInfo);
+            return View(walkathonInfo);
         }
 
-        // POST: DB/Edit/5
+        // POST: Walk/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,FirstName,LastName,Email,Phone,Address,City,State,ZIP,ShirtSize,PicConsent")] GenInfo genInfo)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,CustID,Payment")] WalkathonInfo walkathonInfo)
         {
-            if (id != genInfo.ID)
+            if (id != walkathonInfo.ID)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace CommunityProject.Controllers
             {
                 try
                 {
-                    _context.Update(genInfo);
+                    _context.Update(walkathonInfo);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!GenInfoExists(genInfo.ID))
+                    if (!WalkathonInfoExists(walkathonInfo.ID))
                     {
                         return NotFound();
                     }
@@ -112,10 +112,10 @@ namespace CommunityProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(genInfo);
+            return View(walkathonInfo);
         }
 
-        // GET: DB/Delete/5
+        // GET: Walk/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,30 +123,30 @@ namespace CommunityProject.Controllers
                 return NotFound();
             }
 
-            var genInfo = await _context.GenInfo
+            var walkathonInfo = await _context.WalkathonInfo
                 .SingleOrDefaultAsync(m => m.ID == id);
-            if (genInfo == null)
+            if (walkathonInfo == null)
             {
                 return NotFound();
             }
 
-            return View(genInfo);
+            return View(walkathonInfo);
         }
 
-        // POST: DB/Delete/5
+        // POST: Walk/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var genInfo = await _context.GenInfo.SingleOrDefaultAsync(m => m.ID == id);
-            _context.GenInfo.Remove(genInfo);
+            var walkathonInfo = await _context.WalkathonInfo.SingleOrDefaultAsync(m => m.ID == id);
+            _context.WalkathonInfo.Remove(walkathonInfo);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool GenInfoExists(int id)
+        private bool WalkathonInfoExists(int id)
         {
-            return _context.GenInfo.Any(e => e.ID == id);
+            return _context.WalkathonInfo.Any(e => e.ID == id);
         }
     }
 }
