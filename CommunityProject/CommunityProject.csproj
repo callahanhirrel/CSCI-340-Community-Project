@@ -18,5 +18,6 @@
   <ItemGroup>
     <Compile Remove="Models\EmptyClass.cs" />
     <Compile Remove="Controllers\DBController.cs" />
+    <Compile Remove="Models\SeedData.cs" />
   </ItemGroup>
 </Project>
