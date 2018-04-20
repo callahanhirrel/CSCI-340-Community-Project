@@ -1,0 +1,31 @@
+@page
+@model CommunityProject.Pages.Walk.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WalkathonInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.CustID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.CustID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Payment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Payment)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.WalkathonInfo.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -22,3 +22,4 @@
                       Lines="@(EFProjectMetadata)" />
   </Target>
 </Project>
+

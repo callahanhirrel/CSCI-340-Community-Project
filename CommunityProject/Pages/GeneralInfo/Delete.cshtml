@@ -1,0 +1,88 @@
+@page
+@model CommunityProject.Pages.GeneralInfo.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>GenInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.DOB)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.DOB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.ZIP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.ZIP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.ShirtSize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.ShirtSize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenInfo.PicConsent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenInfo.PicConsent)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="GenInfo.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
