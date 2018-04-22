@@ -3,7 +3,139 @@
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<h2></h2>
+<h3></h3>
 
-<p>Use this area to provide additional information.</p>
+<html>
+<head><style type="text/css">paragraph {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+h4 {text-align:center;}
+
+names {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 11.5px;
+  padding: 0 80px;
+}
+
+quote {
+  font-family: 'Garamond', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  font-style: bold;
+  padding: 0 30px;
+  text-align: center;
+}
+.row {
+  padding: 10px;
+}
+
+.options {
+    padding-left: 50px;
+}
+
+
+.boxed {
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: left;
+  padding: 15px;
+  background-color: rgb(252, 252, 252);
+  display: block;
+}
+
+.hid {
+  text-align: left;
+  padding: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+.box {
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.headerimg {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Volunteering_%288618932799%29.jpg/1200px-Volunteering_%288618932799%29.jpg");
+  background-size: cover;
+  width: 1120px;
+  height: 700px;
+}</style>
+  
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  
+   <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 align="center">About Us - CHDC Volunteer Council</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 headerimg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 boxed">
+          <h2>Schedule</h2>
+          <ul>
+            <li>Meets on the 3rd Thursday of each month
+            <li>11:30 A.M. to 12:00 P.M.: Lunch</li>
+            <li>12:00 P.M. to 1:00 P.M.: Meeting</li>
+          </ul>
+        </div>
+      </div>
+      
+       <div class="row">
+        <div class="col-sm-12 boxed"><center>
+          <h2>Members</h2>
+          <b> President</b><br>
+           Annette Matthews<br><br>
+          <b>Vice-President</b><br>
+            Jacqueline Lanier<br><br>
+          <b>Treasurer</b><br>
+          Stefanie Vann<br><br>
+          <b>Secretary</b><br>
+          Adriana Freeman<br><br>
+          <b>Lifetime Honorary Members</b><br>
+          Fred Petrucelli<br>
+          Robert Huber<br><br>
+          <b>Member at Large</b><br>
+          Pat Clayton<br><br>
+          <b>Agency Staff Member</b><br>
+          Christina Dilbeck<br><br>
+          <b>Agency Superintendent</b><br>
+          Sarah Murphy<br><br>
+          <b>Volunteer Council Coordinator</b><br>
+          Elizabeth Molica<br>
+          Ext. 319<br><br>
+          <b>Volunteer Council Secretary</b><br>
+          Ashley Darton and Melissa Boyce<br>
+          Ext. 370<br><br>
+        </center></div>
+      </div>
+    </section>
+  
+<script>   $('input[type=radio][name=payChoice]').change(function(){
+     if (this.value == "in-person") {
+       $('.hid').css('display', 'block');
+     }else {
+        $('.hid').css('display', 'none');
+     }
+      });</script></body>
+
+</div></div>

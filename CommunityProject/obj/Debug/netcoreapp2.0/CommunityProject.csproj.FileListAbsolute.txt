@@ -1,13 +1,3 @@
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.deps.json
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.json
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.dev.json
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.dll
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.pdb
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.csproj.CoreCompileInputs.cache
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.AssemblyInfoInputs.cache
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.AssemblyInfo.cs
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.dll
-/Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.pdb
 C:/Users/Chantal Danyluk/Desktop/Databases/CSCI-340-Community-Project/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.deps.json
 C:/Users/Chantal Danyluk/Desktop/Databases/CSCI-340-Community-Project/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.json
 C:/Users/Chantal Danyluk/Desktop/Databases/CSCI-340-Community-Project/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.dev.json
@@ -19,6 +9,7 @@ C:/Users/Chantal Danyluk/Desktop/Databases/CSCI-340-Community-Project/CSCI-340-C
 C:/Users/Chantal Danyluk/Desktop/Databases/CSCI-340-Community-Project/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.dll
 C:/Users/Chantal Danyluk/Desktop/Databases/CSCI-340-Community-Project/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.pdb
 /Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.deps.json
 C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.json
 C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityProject/bin/Debug/netcoreapp2.0/CommunityProject.runtimeconfig.dev.json
@@ -30,3 +21,15 @@ C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityPr
 C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.AssemblyInfo.cs
 C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.dll
 C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.pdb
+=======
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.deps.json
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.runtimeconfig.json
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.runtimeconfig.dev.json
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.dll
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.pdb
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.csproj.CoreCompileInputs.cache
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.AssemblyInfoInputs.cache
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.AssemblyInfo.cs
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.dll
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.pdb
+>>>>>>> master

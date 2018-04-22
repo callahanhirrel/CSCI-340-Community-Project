@@ -1,11 +1,18 @@
 ﻿@page
 @model fishingderbyModel
 @{
+<<<<<<< HEAD
     ViewData["Title"] = "Fishing Derby";
 
 }
 
 <h2>@ViewData["Title"]</h2>
+=======
+
+
+}
+<h2></h2>
+>>>>>>> master
 
 <html>
 <head><style type="text/css">paragraph {
@@ -43,9 +50,11 @@ quote {
 
 
 .boxed {
+  border: 2px solid black;
+  border-radius: 8px;
   text-align: left;
   padding: 15px;
-  background-color: #e6e9f2;
+  background-color: rgb(252, 252, 252);
   display: block;
 }
 
@@ -71,8 +80,12 @@ section .row img {
 
   
     <section class="container">
+  <div class="col-sm-12">
+  <div class="boxed">
       <h1 align="center">Conway Human Development Center's Community Annaul Fishing Derby Registration Form</h1>
     <h4>Saturday July 30, 20XX</h4>
+      <h1 align="center">Conway Human Development Center's Community Annual Fishing Derby Registration Form</h1>
+    <h4>Saturday July 30, w</h4>
     <h4>7:30am</h4>
       <div class="row">
       <div class="col-sm-4">
@@ -85,19 +98,29 @@ section .row img {
       <form action="/action_page.php" method="POST">
         <div class="form-group">
       
-     <div class="row">
+ <div class="row">
       <div class="col-sm-2">
-          <label for="name">Anglers First Name:</label>
-        <input type="text" class="form-control" id="name" name="user-name">
+          <label for="name">Angler's First Name:</label>
+        <input type="text" class="form-control" id="name" name="firstname">
       </div>
        <div class="col-sm-2">
-          <label for="name">Anglers Last Name:</label>
+          <label for="name">Angler's Last Name:</label>
         <input type="text" class="form-control" id="name" name="user-name">
       </div>
-      <div class="col-sm-4">
-       <label for="phone">Phone:</label>
-        <input type="text" class="form-control" id="phone" name="user-phone">
+           <div class="col-sm-4">
+        <label for="phone">Phone:</label>
+       <div class="row">
+         <div class="col-sm-3">
+        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="3">
+         </div>
+         <div class="col-sm-3">
+        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="3">
+           </div>
+         <div class="col-sm-4">
+        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="4">
+           </div>
       </div>
+     
     </div>
       
       
@@ -184,11 +207,12 @@ section .row img {
         </div>
         <div class="col-sm-6">
        <label for="zip">Date of Birth (MMDDYY)</label>
-        <input type="text" class="form-control" id="email" name="user-email">
+        <input type="text" class="form-control" id="email" name="birthdate">
       </div>
     </div>
       
     </div>
+        </div>
         
      <div class="row">     
      <div class="col-sm-10">
@@ -201,6 +225,7 @@ In consideration of my acceptance of this form, I hereby for myself, my administ
     <input type="submit" value="Submit">
     </div>
           </div>
+</div></div>
           
 </form></section>
       

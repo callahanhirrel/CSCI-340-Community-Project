@@ -6,7 +6,7 @@
 
 
 
-<h2>@ViewData["Title"]</h2>
+<h2></h2>
 
 <html>
 <head><style type="text/css">paragraph {
@@ -44,9 +44,11 @@ quote {
 
 
 .boxed {
+  border: 2px solid black;
+  border-radius: 8px;
   text-align: left;
   padding: 15px;
-  background-color: #e6e9f2;
+  background-color: rgb(252, 252, 252);
   display: block;
 }
 
@@ -72,6 +74,8 @@ section .row img {
 </head>
   
     <section class="container">
+  <div class="col-sm-12">
+  <div class="boxed">
        <h1 align="center">Conway Human Development Center's Community Walk-A-Thon Registration Form</h1>
     <h4>20XX</h4>
       <div class="row">
@@ -95,22 +99,36 @@ section .row img {
         <input type="text" class="form-control" id="name" name="user-name">
       </div>
       <div class="col-sm-4">
-       <label for="phone">Phone:</label>
-        <input type="text" class="form-control" id="phone" name="user-phone">
+        <label for="phone">Phone:</label>
+       <div class="row">
+         <div class="col-sm-3">
+        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="3">
+         </div>
+         <div class="col-sm-3">
+        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="3">
+           </div>
+         <div class="col-sm-4">
+        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="4">
+           </div>
+      </div>
+      </div>
+       <div class="col-sm-4">
+       <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" name="user-email">
       </div>
     </div>
       
       
          <div class="row">
       <div class="col-sm-3">
-       <label for="address">Address:</label>
+       <label for="address">Street Address:</label>
         <input type="text" class="form-control" id="address" name="user-address">
       </div>
       <div class="col-sm-3">
        <label for="city">City:</label>
         <input type="text" class="form-control" id="city" name="user-city">
       </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
 <label for="state" class="col-sm-2 control-label">State</label>
 	<div class="col-sm-10">
 		<select class="form-control" id="state" name="state">
@@ -171,20 +189,20 @@ section .row img {
 	</div>
 
       </div>
-       <div class="col-sm-3">
+       <div class="col-sm-2">
        <label for="zip">Zip:</label>
         <input type="text" class="form-control" id="zip" name="user-zip">
       </div>
-    </div>
-      
-      <div class="row">
-      <div class="col-sm-10">
-      <b>
-        <div class="options">
-          
-        </div>
-      </div>
-    </div>
+           
+           <div class="col-sm-2">
+             <label>Date of Birth</label>
+      <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+           </div>
+    
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+          </div>
       
         <div class="row">
       <div class="col-sm-10">
@@ -243,7 +261,7 @@ Donations are accepted the following ways:<br>
   <li><a href="http://localhost:54736/Sponsors">through a sponsor pledge.</a></li>
 </ul>  
        </b>
-        </div></div></div>
+        </div></div></div></div></div>
       </section>
 
   
