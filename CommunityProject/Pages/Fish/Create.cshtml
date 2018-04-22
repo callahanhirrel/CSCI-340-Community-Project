@@ -1,0 +1,93 @@
+@page
+@model CommunityProject.Pages.Fish.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>FishingDerbyInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="FishingDerbyInfo.Consent" /> @Html.DisplayNameFor(model => model.Consent))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.FirstName" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.FirstName" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.LastName" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.LastName" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.DOB" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.DOB" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.DOB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.Email" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.Email" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.Phone" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.Phone" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.Address" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.Address" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.City" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.City" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.State" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.State" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.ZIP" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.ZIP" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.ZIP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingDerbyInfo.ShirtSize" class="control-label"></label>
+                <input asp-for="FishingDerbyInfo.ShirtSize" class="form-control" />
+                <span asp-validation-for="FishingDerbyInfo.ShirtSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="FishingDerbyInfo.PicConsent" /> @Html.DisplayNameFor(model => model.PicConsent))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -12,14 +12,16 @@ paragraph {
 }
 
 header {
+  background-color: #164388;
   padding: 20px 0;
 }
 
 header .row,
 footer .row {
   display: flex;
-  background-color: #222222;
+  background-color: #1C89C1;
   max-width: 100%;
+  text-align: center;
   align-items: center;
 }
 
@@ -32,6 +34,7 @@ header h1 {
 
 header nav {
   display: flex;
+  background-color: #164388;
   justify-content: flex-end;
 }
 
@@ -55,7 +58,6 @@ header p {
     max-height: 300px;
     height: 500px;
     text-shadow: 0.25px 0.25px 0.25px #000000
-
 }
 
 
@@ -66,19 +68,17 @@ header p {
   max-height: 30000px;
   margin: 0;
   color: #fff;
-  text-shadow: -2px 0 #495466, 0 2px #495466, 2px 0 #495466, 0 -2px #495466;
 }
 
 .jumbotron h3 {
   margin: 0 0 20px;
   color: #fff;
-  text-shadow: -2px 0 #495466, 0 2px #495466, 2px 0 #495466, 0 -2px #495466;
 }
 
 section .row img {
   margin: 0 0 30px;
   width: 100%;
-   background-color: #495466
+  background-color: #164388;
 }
 
 .col-md-6 {
@@ -99,7 +99,7 @@ section .row img {
 }
 
 .btn-secondary {
-  background-color: #E8DFE0;
+  background-color: #164388;
   color: #ffffff;
   margin: 0 0 30px;
 }
@@ -107,24 +107,28 @@ section .row img {
 footer {
   font-size: 12px;
   padding: 20px 0;
-  background-color: #222222;
+  text-align: center;
+  background-color: #1C89C1;
   color: white;
   max-width: 100%;
 }
 
 footer .col-sm-8 {
   display: flex;
+  background-color: #1C89C1;
   justify-content: center;
   text-align: center;
 }
 
 footer ul {
   list-style: none;
+  background-color: #1C89C1;
   text-align: center;
 }
 
 footer li img {
   width: 32px;
+  background-color: #1C89C1;
   height: 32px;
 }
 
