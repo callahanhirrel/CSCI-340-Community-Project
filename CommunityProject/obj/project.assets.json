@@ -12575,23 +12575,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Lincolnljf\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\": {},
+>>>>>>> c073b8bdda5a2078960343f276c4ea1e3007a733
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Lincolnljf\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
       "projectName": "CommunityProject",
       "projectPath": "C:\\Users\\Lincolnljf\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
       "packagesPath": "C:\\Users\\Lincolnljf\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lincolnljf\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
+      "projectName": "CommunityProject",
+      "projectPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\CommunityProject.csproj",
+      "packagesPath": "C:\\Users\\Chantal Danyluk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chantal Danyluk\\Documents\\GitHub\\CSCI-340-Community-Project\\CommunityProject\\obj\\",
+>>>>>>> c073b8bdda5a2078960343f276c4ea1e3007a733
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Lincolnljf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Chantal Danyluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> c073b8bdda5a2078960343f276c4ea1e3007a733
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
