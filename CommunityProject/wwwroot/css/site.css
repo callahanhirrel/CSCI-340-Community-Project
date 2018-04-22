@@ -113,16 +113,19 @@ footer {
 
 footer .col-sm-8 {
   display: flex;
+  background-color: #1C89C1;
   justify-content: center;
   text-align: center;
 }
 
 footer ul {
   list-style: none;
+  background-color: #1C89C1;
   text-align: center;
 }
 
 footer li img {
+  background-color: #1C89C1;
   width: 32px;
   height: 32px;
 }

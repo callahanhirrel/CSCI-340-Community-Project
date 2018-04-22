@@ -93,11 +93,11 @@ section .row img {
  <div class="row">
       <div class="col-sm-2">
           <label for="name">Angler's First Name:</label>
-        <input type="text" class="form-control" id="name" name="firstname" value="@Request.Form["firstName"]">
+        <input type="text" class="form-control" id="name" name="firstname">
       </div>
        <div class="col-sm-2">
           <label for="name">Angler's Last Name:</label>
-        <input type="text" class="form-control" id="name" name="user-name" value="@Request.Form["lastName"]">
+        <input type="text" class="form-control" id="name" name="user-name">
       </div>
            <div class="col-sm-4">
         <label for="phone">Phone:</label>
@@ -112,26 +112,23 @@ section .row img {
         <input type="text" class="form-control" id="phone" name="user-phone" maxlength="4">
            </div>
       </div>
-      <div class="col-sm-4">
-       <label for="phone">Phone:</label>
-        <input type="text" class="form-control" id="phone" name="user-phone" value="@Request.Form["phone"]">
-      </div>
+     
     </div>
       
       
          <div class="row">
       <div class="col-sm-3">
        <label for="address">Address:</label>
-        <input type="text" class="form-control" id="address" name="user-address" value="@Request.Form["address"]">
+        <input type="text" class="form-control" id="address" name="user-address">
       </div>
       <div class="col-sm-3">
        <label for="city">City:</label>
-        <input type="text" class="form-control" id="city" name="user-city" value="@Request.Form["city"]">
+        <input type="text" class="form-control" id="city" name="user-city">
       </div>
         <div class="col-sm-3">
 <label for="state" class="col-sm-2 control-label">State</label>
 	<div class="col-sm-10">
-		<select class="form-control" id="state" name="state" value="@Request.Form["state"]">
+		<select class="form-control" id="state" name="state">
 			<option value="">N/A</option>
 			<option value="AK">Alaska</option>
 			<option value="AL">Alabama</option>
@@ -191,18 +188,18 @@ section .row img {
       </div>
        <div class="col-sm-3">
        <label for="zip">Zip:</label>
-        <input type="text" class="form-control" id="zip" name="user-zip" value="@Request.Form["zip"]">
+        <input type="text" class="form-control" id="zip" name="user-zip">
       </div>
     </div>
       
       <div class="row">
       <div class="col-sm-6">
        <label for="zip">Email</label>
-        <input type="text" class="form-control" id="email" name="user-email" value="@Request.Form["email"]">
+        <input type="text" class="form-control" id="email" name="user-email">
         </div>
         <div class="col-sm-6">
        <label for="zip">Date of Birth (MMDDYY)</label>
-        <input type="text" class="form-control" id="email" name="birthdate" value="@Request.Form["dob"]">
+        <input type="text" class="form-control" id="email" name="birthdate">
       </div>
     </div>
       

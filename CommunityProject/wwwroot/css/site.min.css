@@ -12,6 +12,7 @@ paragraph {
 }
 
 header {
+  background-color: #164388;
   padding: 20px 0;
 }
 
@@ -33,6 +34,7 @@ header h1 {
 
 header nav {
   display: flex;
+  background-color: #164388;
   justify-content: flex-end;
 }
 
@@ -76,7 +78,7 @@ header p {
 section .row img {
   margin: 0 0 30px;
   width: 100%;
-   background-color: #495466
+  background-color: #164388;
 }
 
 .col-md-6 {
@@ -97,7 +99,7 @@ section .row img {
 }
 
 .btn-secondary {
-  background-color: #E8DFE0;
+  background-color: #164388;
   color: #ffffff;
   margin: 0 0 30px;
 }
