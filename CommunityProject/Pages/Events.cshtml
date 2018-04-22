@@ -24,6 +24,13 @@ header {
   background-color: #202020;
 }
 
+header .row,
+footer .row {
+  display: flex;
+  background-color: #202020;
+  align-items: center;
+}
+
 .button {
   background-color: #202020; 
   color: white;
@@ -102,16 +109,14 @@ section .row img {
     background-color: #202020;
 }
 .boxed {
-    border: 2px solid black;
-  border-radius: 8px;
   text-align: left;
   padding: 15px;
+  border: 1px solid black;
   background-color: rgb(252, 252, 252);
   display: block;
 }
 
 .boxed2 {
-    border: 2px solid black;
   text-align: left;
   padding: 15px;
   background-color: rgb(252, 252, 252);
@@ -144,12 +149,7 @@ section .row img {
 
 .btn-group current {
   background-color:#1bd115;
-}
-.carousel-inner > .active {
-    width: 100%
-
-}
-    </style>
+}</style>
 
 
   <title>CHDC</title>
@@ -166,7 +166,7 @@ section .row img {
   <div class="table">
     <div class="left">
       <div class="btn-group">
-        <div class="boxed2">
+        <div class="boxed">
           <b>Events:</b>
         </div>
         
@@ -185,25 +185,10 @@ section .row img {
       <div class="col-md-9">
         
         <h2 id="eventtitle">Walk-A-Thon</h2>
-          <div class="bs-example">
-              <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                      <div class="active item carousel">
-                          <img id="pic1" src="images/Walkathon/1.jpg">
-                      </div>
-                      <div class="item carousel">
-                          <img id="pic2" src="images/Walkathon/2.jpg">
-                      </div>
-                      <div class="item carousel">
-                          <img id="pic3" src="images/Walkathon/3.jpg">
-                      </div>
-                  </div>
-              </div>
-          </div>
+       <img id="pic" src="images/walk-pic.JPG" style="width:675px;height:500px">
       
       <span class="event-display">
-      <p id="demo">The Volunteer Council 5k is our centers biggest fundraiser of the year.  On average this event will raise over $25,000 each year and brings in over 200 participants.  <br> <b>This event is always hosted on the first Saturday of October at 8am at the Visitation Complex.</b><br> There are awards given to the first 3 to cross the finish line, door prizes, and food from local sponsoring restaurants.  Participants that raise over $400 have a chance to win grand prizes! The group that raises $500 or more wins a pizza party and the largest group receives a certificate.<br>
+      <p id="demo">The Volunteer Council 5k is our centers biggest fundraiser of the year.  On average this event will raise over $25,000 each year and brings in over 200 participants.  <br> <b>This event is always hosted on the first Saturday of October at 8am at the Visitation Complex.</b><br> There are awards given to the first 3 to cross the finish line, door prizes, food from sponsoring restaurants such as Chick-Fil-A, Julie’s Sweet Shoppe, Starbucks and Stoby’s.  Participants that raise over $400 have a chance to win grand prizes! The group that raises $500 or more wins a pizza party and the largest group receives a certificate.<br>
         <div class="button" id="register"><a href="http://localhost:54736/walkathon">Sign Up</a></div>
         <div class="button-hid" id="sponsor"><a href="http://localhost:54736/Sponsors">Sponsor</a></div>
         </span></div>
@@ -226,73 +211,59 @@ section .row img {
 
 function viewwalk() {
     document.getElementById("eventtitle").innerHTML = "Walk-A-Thon";
-    document.getElementById("demo").innerHTML = "The Volunteer Council 5k is our centers biggest fundraiser of the year.  On average this event will raise over $25,000 each year and brings in over 200 participants.  <br> <b>This event is always hosted on the first Saturday of October at 8am at the Visitation Complex.</b><br> There are awards given to the first 3 to cross the finish line, door prizes, and food from local sponsoring restaurants.  Participants that raise over $400 have a chance to win grand prizes! The group that raises $500 or more wins a pizza party and the largest group receives a certificate.<br>>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Walkathon\">Sign Up</a>";
+    document.getElementById("demo").innerHTML = "The Volunteer Council 5k is our centers biggest fundraiser of the year.  On average this event will raise over $25,000 each year and brings in over 200 participants.  <br> <b>This event is always hosted on the first Saturday of October at 8am at the Visitation Complex.</b><br> There are awards given to the first 3 to cross the finish line, door prizes, food from sponsoring restaurants such as Chick-Fil-A, Julie’s Sweet Shoppe, Starbucks and Stoby’s.  Participants that raise over $400 have a chance to win grand prizes! The group that raises $500 or more wins a pizza party and the largest group receives a certificate.<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Walkathon\">Sign Up</a>";
   document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
-    $('.button').css('visibility', 'visible');
-    document.getElementById("pic1").src = "images/Walkathon/1.jpg";
-    document.getElementById("pic2").src = "images/Walkathon/2.jpg";
-    document.getElementById("pic3").src = "images/Walkathon/3.jpg";
+   $('.button').css('visibility', 'visible');
+  document.getElementById("pic").src = "images/walk-pic.jpg";
  $('.button-hid').css('visibility', 'visible');
 }
 
 function viewBowl() {
-    document.getElementById("eventtitle").innerHTML = "Bowl-A-Thon";
-    document.getElementById("demo").innerHTML = "The Volunteer Council Bowl-A-Thon is our centers 2nd largest fundraiser of the year.  On average this event will raise over $13,000 each year and brings in over 90 participants. <br><b>This event is always hosted on the first Friday of March at 3pm at Conway Family Bowl. </b><br> There are awards, door prizes, food from local sponsoring restaurants.  Plaques, trophies and pizza parties can be won as well as door prizes. <br> "; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Bowlathon\">Sign Up</a>";
-    document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
-    document.getElementById("pic1").src = "images/Bowlathon/1.jpg";
-    document.getElementById("pic2").src = "images/Bowlathon/2.jpg";
-    document.getElementById("pic3").src = "images/Bowlathon/3.jpg";
+document.getElementById("eventtitle").innerHTML = "Bowl-A-Thon";
+    document.getElementById("demo").innerHTML = "The Volunteer Council Bowl-A-Thon is our centers 2nd largest fundraiser of the year.  On average this event will raise over $13,000 each year and brings in over 90 participants. <br><b>This event is always hosted on the first Friday of March at 3pm at Conway Family Bowl. </b><br> There are awards, door prizes, food from sponsoring restaurants such as Pizza Hut, Ed’s bakery, Wal-Mart Deli and Subway.  Plaques, trophies and pizza parties can be won as well as door prizes. <br> "; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Bowlathon\">Sign Up</a>";
+  document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
+  document.getElementById("pic").src = "images/bowl-pic.JPG";
    $('.button').css('visibility', 'visible');
  $('.button-hid').css('visibility', 'visible');
 }
 
   function viewHealth() {
-      document.getElementById("eventtitle").innerHTML = "Health Fair";
+    document.getElementById("eventtitle").innerHTML = "Health Fair";
     document.getElementById("demo").innerHTML = "It is time for our Annual Community Health Fair! It's grea to have so many local service providers sharing in this event and we sincerely hope you can be a part of it.<br> CHDC's Annual Community Health Fair is schedules for April 18th, 20xx from 8am - 12noon in the CHDC gymnasium.<br> Admission and vendor booths are free. We are seeking free health screenings, demonstrations, support services and information from community resources and health providers.<br> To sign up to be a vendor, please register now!<br>"; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/healthfair\">Become a Vendor</a>";
-    document.getElementById("pic1").src = "images/Health Fair/1.jpg";
-    document.getElementById("pic2").src = "images/Health Fair/2.jpg";
-    document.getElementById("pic3").src = "images/Health Fair/1.jpg";
+     document.getElementById("pic").src = "images/health-fair-group.JPG";
      $('.button').css('visibility', 'visible');
     $('.button-hid').css('visibility', 'hidden');
 }
 
 function viewpolar() {
-    document.getElementById("eventtitle").innerHTML = "Polar Express";
+  document.getElementById("eventtitle").innerHTML = "Polar Express";
     document.getElementById("demo").innerHTML = "The Volunteer Council Polar Express is magical! With the help of participating businesses, our train track is transformed into scenes from famous Christmas movies and is opened up to not only our residents and staff but to the general public, other HDC’s and adult programs with developmental disabilities, childcare and homeschool programs, foster children and special education classes K-5th.  <br><b>There are Christmas crafts, popcorn and hot chocolate and of course pictures with Santa!!  </b><br>The best thing about this event is that it is free for the train rides, refreshments and crafts.  The only cost is $5 to have a professional picture taken with Santa! Last year this event brought in over 2,000 participants. <br><b>It is held the first full week of December. As a public event, no registration is necessary. </b><br>"; 
-    $('.button').css('visibility', 'hidden');
-    document.getElementById("pic1").src = "images/Polar Express/1.jpg";
-    document.getElementById("pic2").src = "images/Polar Express/2.jpg";
-    document.getElementById("pic3").src = "images/Polar Express/3.jpg";
+  $('.button').css('visibility', 'hidden');
+  document.getElementById("pic").src = "images/polar-pic.jpg";
     $('.button-hid').css('visibility', 'hidden');
 }
 
 function viewlunch() {
   document.getElementById("eventtitle").innerHTML = "Appreciation Luncheon";
     document.getElementById("demo").innerHTML = "All volunteers for CHDC are invited to attend the annaul Appreciation Luncheon! catering is provided, and no RSVP is necessary provided you are a current volunteer or have volunteered for CHDC in the past year."; 
-    document.getElementById("pic1").src = "images/food-pic.jpg";
-    document.getElementById("pic2").src = "images/food-pic.jpg";
-    document.getElementById("pic3").src = "images/food-pic.jpg";
-    $('.button').css('visibility', 'hidden');
+  $('.button').css('visibility', 'hidden');
+  document.getElementById("pic").src = "images/food-pic.jpg";
     $('.button-hid').css('visibility', 'hidden');
 }
 
 function viewgarden() {
-    document.getElementById("eventtitle").innerHTML = "Volunteer Garden";
+  document.getElementById("eventtitle").innerHTML = "Volunteer Garden";
     document.getElementById("demo").innerHTML = "The volunteer garden is a relatively new event that allows the community to gather and help grow something together! Volunteers, staff and residents get together to landscape and appreciate nature. This is a wonderful opportunity for a laid back day of community service. <br> <b> To participate please sign up on the official Arkansas volunteer page.</b><br>"; 
-    document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Volunteer Now</a>";
-    document.getElementById("pic1").src = "images/Garden/1.jpg";
-    document.getElementById("pic2").src = "images/Garden/2.jpg";
-    document.getElementById("pic3").src = "images/Garden/3.jpg";
+  document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Volunteer Now</a>";
+  document.getElementById("pic").src = "images/garden-pic.jpg";
   $('.button').css('visibility', 'visible');
     $('.button-hid').css('visibility', 'hidden');
 }
 
 function viewFishing() {
-    document.getElementById("eventtitle").innerHTML = "Fishing Derby";
+  document.getElementById("eventtitle").innerHTML = "Fishing Derby";
     document.getElementById("demo").innerHTML = "The fishing derby is a fun, community driven event hosted in July. Materials are provided, and awards are given for largest fish caught, most fish caught, and first fish caught.<br> Over 50 anglers will participate in this event! <br> If you would like to sign up or sponsor the events, please click the buttons below!<br> "; document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/fishingderby\">Sign Up</a>";
-    document.getElementById("pic1").src = "images/Fishing Derby/1.jpg";
-    document.getElementById("pic2").src = "images/Fishing Derby/2.jpg";
-    document.getElementById("pic3").src = "images/Fishing Derby/3.jpg";
+  document.getElementById("pic").src = "images/most-fish.jpg";
    document.getElementById("sponsor").innerHTML = "<a href=\"http://localhost:54736/Sponsors\">Sponsor</a>";
    $('.button').css('visibility', 'visible');
  $('.button-hid').css('visibility', 'visible');
