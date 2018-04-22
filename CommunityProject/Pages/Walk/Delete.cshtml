@@ -1,0 +1,94 @@
+@page
+@model CommunityProject.Pages.Walk.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>WalkathonInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Payment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Payment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.DOB)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.DOB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.ZIP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.ZIP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.ShirtSize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.ShirtSize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.PicConsent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.PicConsent)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="WalkathonInfo.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

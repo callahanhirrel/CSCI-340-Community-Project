@@ -1,0 +1,91 @@
+@page
+@model CommunityProject.Pages.Walk.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WalkathonInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Payment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Payment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.DOB)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.DOB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.ZIP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.ZIP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.ShirtSize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.ShirtSize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WalkathonInfo.PicConsent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WalkathonInfo.PicConsent)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.WalkathonInfo.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
