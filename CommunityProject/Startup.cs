@@ -25,7 +25,8 @@ namespace CommunityProject
         {
             // Add framework services.
             services.AddMvc();
-            services.AddDbContext<DatabaseContext>(options => options.UseSqlite(Configuration.GetConnectionString("DatabaseContext")));
+            services.AddDbContext<DatabaseContext>(options =>
+                  options.UseSqlite(Configuration.GetConnectionString("DatabaseContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

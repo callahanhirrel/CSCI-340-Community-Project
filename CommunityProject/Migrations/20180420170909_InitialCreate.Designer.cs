@@ -11,14 +11,15 @@ using System;
 namespace CommunityProject.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20180420163300_InitialCreate")]
+    [Migration("20180420170909_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("CommunityProject.Models.BowlathonInfo", b =>
                 {
