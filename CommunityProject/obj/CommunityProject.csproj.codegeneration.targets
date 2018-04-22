@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!--
  Copyright (c) .NET Foundation. All rights reserved.
  Licensed under the Apache License, Version 2.0.
@@ -11,3 +12,18 @@
     <Import Project="$(CodeGenerationTargetLocation)\build\microsoft.visualstudio.web.codegeneration.tools.targets" Condition="Exists('$(CodeGenerationTargetLocation)\build\microsoft.visualstudio.web.codegeneration.tools.targets')" />
   </ImportGroup>
 </Project>
+=======
+﻿<!--
+ Copyright (c) .NET Foundation. All rights reserved.
+ Licensed under the Apache License, Version 2.0.
+ -->
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(CodeGenerationTargetLocation)\buildMultiTargeting\microsoft.visualstudio.web.codegeneration.tools.targets" Condition="Exists('$(CodeGenerationTargetLocation)\buildCrossTargeting\microsoft.visualstudio.web.codegeneration.tools.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' != '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(CodeGenerationTargetLocation)\build\microsoft.visualstudio.web.codegeneration.tools.targets" Condition="Exists('$(CodeGenerationTargetLocation)\build\microsoft.visualstudio.web.codegeneration.tools.targets')" />
+  </ImportGroup>
+</Project>
+>>>>>>> 5810889627fb5ec3131758e0436e064b445871be
