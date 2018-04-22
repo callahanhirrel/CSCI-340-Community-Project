@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CommunityProject.Models;
 
-namespace CommunityProject.Pages.GeneralInfo
+namespace CommunityProject.Pages.Bowl
 {
     public class DeleteModel : PageModel
     {
@@ -19,7 +19,7 @@ namespace CommunityProject.Pages.GeneralInfo
         }
 
         [BindProperty]
-        public GenInfo GenInfo { get; set; }
+        public BowlathonInfo BowlathonInfo { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,9 +28,9 @@ namespace CommunityProject.Pages.GeneralInfo
                 return NotFound();
             }
 
-            GenInfo = await _context.GenInfo.SingleOrDefaultAsync(m => m.ID == id);
+            BowlathonInfo = await _context.BowlathonInfo.SingleOrDefaultAsync(m => m.ID == id);
 
-            if (GenInfo == null)
+            if (BowlathonInfo == null)
             {
                 return NotFound();
             }
@@ -44,11 +44,11 @@ namespace CommunityProject.Pages.GeneralInfo
                 return NotFound();
             }
 
-            GenInfo = await _context.GenInfo.FindAsync(id);
+            BowlathonInfo = await _context.BowlathonInfo.FindAsync(id);
 
-            if (GenInfo != null)
+            if (BowlathonInfo != null)
             {
-                _context.GenInfo.Remove(GenInfo);
+                _context.BowlathonInfo.Remove(BowlathonInfo);
                 await _context.SaveChangesAsync();
             }
 

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CommunityProject.Models;
 
-namespace CommunityProject.Pages.GeneralInfo
+namespace CommunityProject.Pages.Bowl
 {
     public class EditModel : PageModel
     {
@@ -20,7 +20,7 @@ namespace CommunityProject.Pages.GeneralInfo
         }
 
         [BindProperty]
-        public GenInfo GenInfo { get; set; }
+        public BowlathonInfo BowlathonInfo { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,9 +29,9 @@ namespace CommunityProject.Pages.GeneralInfo
                 return NotFound();
             }
 
-            GenInfo = await _context.GenInfo.SingleOrDefaultAsync(m => m.ID == id);
+            BowlathonInfo = await _context.BowlathonInfo.SingleOrDefaultAsync(m => m.ID == id);
 
-            if (GenInfo == null)
+            if (BowlathonInfo == null)
             {
                 return NotFound();
             }
@@ -45,7 +45,7 @@ namespace CommunityProject.Pages.GeneralInfo
                 return Page();
             }
 
-            _context.Attach(GenInfo).State = EntityState.Modified;
+            _context.Attach(BowlathonInfo).State = EntityState.Modified;
 
             try
             {

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using CommunityProject.Models;
 
-namespace CommunityProject.Pages.GeneralInfo
+namespace CommunityProject.Pages.Fish
 {
     public class CreateModel : PageModel
     {
@@ -24,7 +24,7 @@ namespace CommunityProject.Pages.GeneralInfo
         }
 
         [BindProperty]
-        public GenInfo GenInfo { get; set; }
+        public FishingDerbyInfo FishingDerbyInfo { get; set; }
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -33,7 +33,7 @@ namespace CommunityProject.Pages.GeneralInfo
                 return Page();
             }
 
-            _context.GenInfo.Add(GenInfo);
+            _context.FishingDerbyInfo.Add(FishingDerbyInfo);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

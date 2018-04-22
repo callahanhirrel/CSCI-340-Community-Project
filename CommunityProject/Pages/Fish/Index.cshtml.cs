@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CommunityProject.Models;
 
-namespace CommunityProject.Pages.GeneralInfo
+namespace CommunityProject.Pages.Fish
 {
     public class IndexModel : PageModel
     {
@@ -18,11 +18,11 @@ namespace CommunityProject.Pages.GeneralInfo
             _context = context;
         }
 
-        public IList<GenInfo> GenInfo { get;set; }
+        public IList<FishingDerbyInfo> FishingDerbyInfo { get;set; }
 
         public async Task OnGetAsync()
         {
-            GenInfo = await _context.GenInfo.ToListAsync();
+            FishingDerbyInfo = await _context.FishingDerbyInfo.ToListAsync();
         }
     }
 }

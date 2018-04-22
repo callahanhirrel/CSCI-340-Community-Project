@@ -1,5 +1,5 @@
 @page
-@model CommunityProject.Pages.GeneralInfo.IndexModel
+@model CommunityProject.Pages.Bowl.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -14,44 +14,56 @@
     <thead>
         <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].FirstName)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].TeamID)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].LastName)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].Payment)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].DOB)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].FirstName)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].Email)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].LastName)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].Phone)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].DOB)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].Address)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].Email)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].City)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].Phone)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].State)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].Address)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].ZIP)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].City)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].ShirtSize)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].State)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.GenInfo[0].PicConsent)
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].ZIP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].ShirtSize)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BowlathonInfo[0].PicConsent)
                 </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.GenInfo) {
+@foreach (var item in Model.BowlathonInfo) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Payment)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FirstName)
             </td>

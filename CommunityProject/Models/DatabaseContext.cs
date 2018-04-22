@@ -9,7 +9,6 @@ namespace CommunityProject.Models
         {
         }
 
-        public DbSet<CommunityProject.Models.GenInfo> GenInfo { get; set; }
         public DbSet<CommunityProject.Models.BowlathonInfo> BowlathonInfo { get; set; }
         public DbSet<CommunityProject.Models.FishingDerbyInfo> FishingDerbyInfo { get; set; }
         public DbSet<CommunityProject.Models.WalkathonInfo> WalkathonInfo { get; set; }

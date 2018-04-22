@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CommunityProject.Models;
 
-namespace CommunityProject.Pages.GeneralInfo
+namespace CommunityProject.Pages.Fish
 {
     public class DetailsModel : PageModel
     {
@@ -18,7 +18,7 @@ namespace CommunityProject.Pages.GeneralInfo
             _context = context;
         }
 
-        public GenInfo GenInfo { get; set; }
+        public FishingDerbyInfo FishingDerbyInfo { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -27,9 +27,9 @@ namespace CommunityProject.Pages.GeneralInfo
                 return NotFound();
             }
 
-            GenInfo = await _context.GenInfo.SingleOrDefaultAsync(m => m.ID == id);
+            FishingDerbyInfo = await _context.FishingDerbyInfo.SingleOrDefaultAsync(m => m.ID == id);
 
-            if (GenInfo == null)
+            if (FishingDerbyInfo == null)
             {
                 return NotFound();
             }
