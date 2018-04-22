@@ -33,3 +33,4 @@ C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityPr
 C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.dll
 C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.pdb
 >>>>>>> master
+C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.csprojResolveAssemblyReference.cache
