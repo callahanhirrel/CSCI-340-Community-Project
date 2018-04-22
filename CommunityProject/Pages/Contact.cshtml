@@ -3,17 +3,122 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<h2></h2>
+<h3></h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<html>
+<head><style type="text/css">
+paragraph {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+h4 {text-align:center;}
+
+names {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 11.5px;
+  padding: 0 80px;
+}
+
+quote {
+  font-family: 'Garamond', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  font-style: bold;
+  padding: 0 30px;
+  text-align: center;
+}
+.row {
+  padding: 10px;
+}
+
+.options {
+    padding-left: 50px;
+}
+
+
+.boxed {
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: left;
+  padding: 15px;
+  background-color: rgb(252, 252, 252);
+  display: block;
+}
+
+.hid {
+  text-align: left;
+  padding: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+.box {
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.mapimage {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-image: url("images/map-pic.JPG");
+  background-size: cover;
+  height: 700px;
+}
+</style></head>
+
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 align="center">Contact Us - CHDC Volunteer Council</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 mapimage">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 boxed">
+          <h2>Our Address</h2>
+          <p>
+            150 East Siebenmorgen Road
+            <br>Conway, AR, 72032
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 boxed">
+          <h2>Phone Numbers</h2>
+          <p>
+            Telephone: (501) 329-6851
+            <br>Fax: (501) 336-0508
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 boxed">
+          <h2>Email</h2>
+          <p>
+            Elizabeth Molica (Volunteer Council Coordinator): <a href="mailto:elizabeth.molica@dhs.arkansas.gov">elizabeth.molica@dhs.arkansas.gov</a>
+            <br>Volunteer Council: <a href="mailto:chdcvolunteercouncil@gmail.com">chdcvolunteercouncil@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

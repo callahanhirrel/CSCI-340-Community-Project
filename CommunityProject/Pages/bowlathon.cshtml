@@ -1,18 +1,24 @@
 ﻿@page
 @model bowlathonModel
 @{
-    ViewData["Title"] = "Bowl-A-Thon";
+    ViewData["Title"] = "";
 }
 
 
 
-<h2>@ViewData["Title"]</h2>
+<h2></h2>
 
 <html>
 <head><style type="text/css">paragraph {
   display: flex;
   align-items: center;
   padding: 0 80px;
+}
+
+.paypal {
+  padding: 15px;
+  display: block;
+  color: #495466;
 }
 
 h4 {text-align:center;}
@@ -44,9 +50,11 @@ quote {
 
 
 .boxed {
+  border: 2px solid black;
+  border-radius: 8px;
   text-align: left;
   padding: 15px;
-  background-color: #e6e9f2;
+  background-color: rgb(252, 252, 252);
   display: block;
 }
 
@@ -72,6 +80,8 @@ section .row img {
 </head>
   
     <section class="container">
+  <div class="col-sm-12">
+  <div class="boxed">
        <h1 align="center">Conway Human Development Center's Community Bowl-A-Thon Registration Form</h1>
     <h4>Friday March 2, 20XX</h4>
     <h4>3:00pm-5:00pm</h4>
@@ -190,7 +200,6 @@ section .row img {
       
         <div class="row">
       <div class="col-sm-10">
-        <div class="boxed">
         <p>Benefit Bowl-A-Thon 20xx Team Entry Form</p>
         
       <div class="options">
@@ -212,8 +221,36 @@ section .row img {
             <input type="radio" name="payChoice" value="in-person" id="in-person"> I will be paying in person.<br>
           <input type="radio" name="payChoice" value="online" id="online"> I will be paying online.<br>
           </div>
+
+         <div class="paypal">
+            <body>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="blank">
+
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business"
+        value="chdcvolunteercouncil@gmail.com">
+
+    <!-- Specify a Donate button. -->
+    <input type="hidden" name="cmd" value="_donations">
+
+    <!-- Specify details about the contribution -->
+    <input type="hidden" name="item_name" value="Bowl-a-thon">
+    <input type="hidden" name="item_number" value="Registration Fee">
+    <input type="hidden" name="currency_code" value="USD">
+      
+    <!-- Only include this line if you want to choose a specific donation amount. -->
+    <input type="hidden" name="amount" value="50.00">
+
+    <!-- Display the payment button. -->
+    <input type="image" name="submit"
+  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+    alt="Donate">
+    <img alt="" width="0" height="0"
+  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+    </form>
+  </body>
+          </div>
           
-        </div>
 
         </div>
     </div>
@@ -247,7 +284,26 @@ Donations are accepted the following ways:<br>
        </b>
         </div></div></div>
       </section>
-
-  
+</div>
+</div>
 
 </html>
+
+<script>$(document).ready(() => {
+   $('input[type=radio][name=payChoice]').change(function(){
+     if (this.value == "in-person") {
+       $('.hid').css('display', 'block');
+     }else {
+        $('.hid').css('display', 'none');
+     }
+      });
+  
+   $('input[type=radio][name=payChoice]').change(function(){
+     if (this.value == "online") {
+       $('.paypal').css('display', 'block');
+     }else {
+        $('.paypal').css('display', 'none');
+     }
+      });
+
+});
