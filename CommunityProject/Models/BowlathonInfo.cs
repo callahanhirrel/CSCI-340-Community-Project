@@ -6,7 +6,7 @@ namespace CommunityProject.Models
 {
     public class BowlathonInfo
     {
-        public int ID { get; set; } // seemingly unnecessary primary key to appease framework gods
+        public int ID { get; set; }
         public int TeamID { get; set; } // NULL if no team, will be identical 
                                         //  for each person registered on the same team
         public string Payment { get; set; } // will be "online" or "in person"
@@ -27,6 +27,7 @@ namespace CommunityProject.Models
         public string Email { get; set; }
 
         [Required]
+        [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}", ErrorMessage = "Please input a valid phone number")] // got this RE from here: https://stackoverflow.com/a/18091377
         public string Phone { get; set; }
 
         [Required]
@@ -39,6 +40,7 @@ namespace CommunityProject.Models
         public string State { get; set; }
 
         [Required]
+        [RegularExpression(@"^\d{5}(?:[-\s]\d{4})?$")] // got this RE from here: https://stackoverflow.com/a/14942826
         public int ZIP { get; set; }
 
         [Required(ErrorMessage = "Field required")]
