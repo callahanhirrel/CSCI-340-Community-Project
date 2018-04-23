@@ -228,6 +228,35 @@ section .row img {
             <input type="radio" name="payChoice" value="in-person" id="in-person"> I will be paying in person.<br>
           <input type="radio" name="payChoice" value="online" id="online"> I will be paying online.<br>
           </div>
+
+ <div class="paypal">
+            <body>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="blank">
+
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business"
+        value="chdcvolunteercouncil@gmail.com">
+
+    <!-- Specify a Donate button. -->
+    <input type="hidden" name="cmd" value="_donations">
+
+    <!-- Specify details about the contribution -->
+    <input type="hidden" name="item_name" value="Bowl-a-thon">
+    <input type="hidden" name="item_number" value="Registration Fee">
+    <input type="hidden" name="currency_code" value="USD">
+      
+    <!-- Only include this line if you want to choose a specific donation amount. -->
+    <input type="hidden" name="amount" value="50.00">
+
+    <!-- Display the payment button. -->
+    <input type="image" name="submit"
+  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+    alt="Donate">
+    <img alt="" width="0" height="0"
+  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+    </form>
+  </body>
+          </div>
           
         </div>
 
