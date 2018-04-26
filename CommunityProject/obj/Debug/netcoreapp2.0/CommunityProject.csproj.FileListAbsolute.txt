@@ -34,10 +34,7 @@ C:/Users/Chantal Danyluk/Documents/GitHub/CSCI-340-Community-Project/CommunityPr
 /Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.AssemblyInfo.cs
 /Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.dll
 /Users/callahanhirrel/GitHub/CSCI-340-Community-Project/CommunityProject/obj/Debug/netcoreapp2.0/CommunityProject.pdb
-<<<<<<< Updated upstream
 C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\obj\Debug\netcoreapp2.0\CommunityProject.csprojResolveAssemblyReference.cache
-=======
->>>>>>> Stashed changes
 >>>>>>> origin/master
 C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.deps.json
 C:\Users\Chantal Danyluk\Documents\GitHub\CSCI-340-Community-Project\CommunityProject\bin\Debug\netcoreapp2.0\CommunityProject.runtimeconfig.json
