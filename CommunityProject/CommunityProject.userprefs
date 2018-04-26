@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{CD1EEFDC-56F5-4F73-B925-847ED19838E1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Walk/Create.cshtml">
+    <Files>
+      <File FileName="Pages/Walk/Create.cshtml" Line="202" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CommunityProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
