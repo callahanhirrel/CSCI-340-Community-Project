@@ -88,7 +88,9 @@ h4 {text-align:center;}
                 <input asp-for="WalkathonInfo.Email" class="form-control" />
                 <span asp-validation-for="WalkathonInfo.Email" class="text-danger"></span>
             </div>
-</div></div></div>
+</div>
+          </div>
+  </div>
 
 <div class="row">
     <div class="col-md-12">
@@ -132,7 +134,9 @@ h4 {text-align:center;}
                 <input asp-for="WalkathonInfo.ZIP" class="form-control" />
                 <span asp-validation-for="WalkathonInfo.ZIP" class="text-danger"></span>
             </div>
-</div></div></div>
+</div>
+  </div>
+  </div>
 
 <div class="boxed">
 <div class="row">
@@ -174,7 +178,11 @@ h4 {text-align:center;}
     </form>
   </body>
 
-</div></div></div></div></div>
+</div>
+      </div>
+  </div>
+  </div>
+  </div>
 
 <div class="row">
     <div class="col-md-12">
@@ -187,19 +195,16 @@ h4 {text-align:center;}
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
-            </div></div</div>
+               </div></div>
         </form>
     </div>
+    
 </div>
 
-<div>
+
     <a asp-page="Index">Back to List</a>
 
-</div></div></section>
-
-
-
-</div>
+</section>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
