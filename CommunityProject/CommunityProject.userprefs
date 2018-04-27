@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{CD1EEFDC-56F5-4F73-B925-847ED19838E1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Walk/Create.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Bowl/Index.cshtml">
     <Files>
-      <File FileName="Pages/Walk/Create.cshtml" Line="202" Column="6" />
+      <File FileName="Pages/Bowl/Index.cshtml" Line="184" Column="88" />
+      <File FileName="Pages/Admin.cshtml" Line="205" Column="1" />
+      <File FileName="Pages/Bowl/Create.cshtml" Line="86" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
