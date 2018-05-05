@@ -5,98 +5,185 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Fishing Derby Registration</h2>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Consent)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].FirstName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].LastName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].DOB)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Email)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Phone)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Address)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].City)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].State)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].ZIP)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].ShirtSize)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].PicConsent)
-                </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.FishingDerbyInfo) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Consent)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DOB)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.State)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ZIP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShirtSize)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PicConsent)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+<head><style type="text/css">paragraph {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
 }
-    </tbody>
-</table>
+
+h4 {text-align:left;}
+
+names {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 11.5px;
+  padding: 0 80px;
+}
+
+quote {
+  font-family: 'Garamond', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  font-style: bold;
+  padding: 0 30px;
+  text-align: center;
+}
+.row {
+  padding: 10px;
+}
+
+.results{
+    max-height: 717px;
+    min-height: 717px;
+    overflow-y:scroll; 
+    overflow-x:auto;  
+}
+
+.options {
+    padding-left: 50px;
+}
+
+
+.boxed {
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: left;
+  padding: 15px;
+  background-color: rgb(252, 252, 252);
+  display: block;
+}
+
+.hid {
+  text-align: left;
+  padding: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+   background-color: #495466
+}</style>
+  <title>Admin Search</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <section class="container">
+        <p>
+            <a asp-page="Create">Create New</a>
+        </p>
+        <div class="row">
+           
+        <div class="boxed">
+        <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                        <!-- <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Consent)
+                        </th> -->
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].FirstName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].LastName)
+                        </th>
+                        <!-- <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].DOB)
+                        </th> -->
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Phone)
+                        </th>
+                        <!-- <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Address)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].City)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].State)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].ZIP)
+                        </th> -->
+                        <th>
+                            <!-- @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].ShirtSize) -->
+                            T-Shirt Size
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].Consent)
+                        </th>
+                        <th>
+                            <!-- @Html.DisplayNameFor(model => model.FishingDerbyInfo[0].PicConsent) -->
+                            Photo Consent
+                        </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var item in Model.FishingDerbyInfo) {
+                <tr>
+                    <!-- <td>
+                        @Html.DisplayFor(modelItem => item.Consent)
+                    </td> -->
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <!-- <td>
+                        @Html.DisplayFor(modelItem => item.DOB)
+                    </td> -->
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <!-- <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.State)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ZIP)
+                    </td> -->
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShirtSize)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Consent)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PicConsent)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.ID">All Information</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+        }
+            </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+    </section>
+</body>

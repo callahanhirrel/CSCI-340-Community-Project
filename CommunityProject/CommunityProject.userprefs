@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{CD1EEFDC-56F5-4F73-B925-847ED19838E1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Bowl/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/BowlathonInfo.cs">
     <Files>
-      <File FileName="Pages/Bowl/Index.cshtml" Line="184" Column="88" />
+      <File FileName="Pages/Bowl/Index.cshtml" Line="195" Column="8" />
+      <File FileName="Pages/Fish/Index.cshtml" Line="108" Column="30" />
       <File FileName="Pages/Admin.cshtml" Line="205" Column="1" />
-      <File FileName="Pages/Bowl/Create.cshtml" Line="86" Column="16" />
+      <File FileName="Pages/Bowl/Create.cshtml" Line="101" Column="27" />
+      <File FileName="Models/BowlathonInfo.cs" Line="30" Column="114" />
+      <File FileName="Models/FishingDerbyInfo.cs" Line="28" Column="114" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
