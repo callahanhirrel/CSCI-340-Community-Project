@@ -47,6 +47,7 @@ namespace CommunityProject.Models
         [Display(Name = "T-Shirt Size")]
         public string ShirtSize { get; set; }
 
+        [Required(ErrorMessage = "You must give photo consent to participate.")]
         [Display(Name = "I consent to having my photo taken by the CHDC Volunteer Council")]
         public Boolean PicConsent { get; set; }
     }

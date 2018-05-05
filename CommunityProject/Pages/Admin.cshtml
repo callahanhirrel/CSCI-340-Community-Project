@@ -6,209 +6,269 @@
 
 
 
-<h2>Admin Edit</h2>
+<h2>Form Finder</h2>
 
 <html>
-<head><style type="text/css">paragraph {
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
-}
+<head>
+    <style type="text/css">
+        body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
 
-h4 {text-align:left;}
+        paragraph {
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+        }
 
-names {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-style: italic;
-  font-size: 11.5px;
-  padding: 0 80px;
-}
+        header {
+            padding: 20px 0;
+            background-color: #202020;
+        }
 
-quote {
-  font-family: 'Garamond', sans-serif;
-  font-size: 23px;
-  font-style: italic;
-  font-style: bold;
-  padding: 0 30px;
-  text-align: center;
-}
-.row {
-  padding: 10px;
-}
+        .button {
+            background-color: #202020;
+            color: white;
+            border: 5;
+            border-color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
 
-.results{
-    max-height: 717px;
-    min-height: 717px;
-    overflow-y:scroll; 
-    overflow-x:auto;  
-}
+        .button-hid {
+            background-color: #202020;
+            color: white;
+            border: 5;
+            border-color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            visibility: hidden;
+        }
 
-.options {
-    padding-left: 50px;
-}
+        header h1 {
+            font-weight: 700;
+            color: white;
+            margin: 0;
+        }
 
+        header h2 {
+            font-weight: 200;
+            color: black;
+            margin: 0;
+        }
 
-.boxed {
-  border: 2px solid black;
-  border-radius: 8px;
-  text-align: left;
-  padding: 15px;
-  background-color: rgb(252, 252, 252);
-  display: block;
-}
+        header nav {
+            display: flex;
+            justify-content: flex-end;
+        }
 
-.hid {
-  text-align: left;
-  padding: 15px;
-  font-weight: bold;
-  display: none;
-}
+        header p {
+            color: white;
+            padding: 0 20px;
+            margin: 0;
+        }
 
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
-   background-color: #495466
-}</style>
-  <title>Admin Search</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+        section .row img {
+            margin: 0 0 30px;
+            width: 100%;
+            background-color: #202020;
+        }
+
+        .col-md-6 {
+            margin: 0 0 30px;
+        }
+
+        .btn-group button {
+            background-color: #202020;
+            /* Blue background */
+            border: 1px solid black;
+            /* Green border */
+            color: white;
+            /* White text */
+            padding: 10% 10%;
+            /* Some padding */
+            cursor: pointer;
+            /* Pointer/hand icon */
+            width: 100%;
+            /* Standardized width so the buttons are the same size*/
+            height: 75px;
+            /* Standardized height so buttons are the same size */
+            display: block;
+            /* Make the buttons appear below each other */
+        }
+
+            .btn-group button:not(:last-child) {
+                border-bottom: none;
+                /* Prevent double borders */
+            }
+
+            /* Add a background color on hover */
+
+            .btn-group button:hover {
+                background-color: #202020;
+            }
+
+        .boxed {
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: left;
+            padding: 15px;
+            background-color: rgb(252, 252, 252);
+            display: block;
+        }
+
+        .boxed2 {
+            border: 2px solid black;
+            text-align: left;
+            padding: 15px;
+            background-color: rgb(252, 252, 252);
+            display: block;
+        }
+
+        .boxed3 {
+            border: 2px solid black;
+            margin: 25px;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .btn.btn-primary {
+            border-radius: 2px;
+            border: 0px;
+            color: #fbd1d5;
+            text-shadow: none;
+        }
+
+            .btn.btn-primary:hover {
+                background-color: #fbd1d5;
+            }
+
+        .btn-secondary {
+            background-color: #e8dfe0;
+            margin: 0 0 30px;
+        }
+
+        .table {
+            padding: 5px;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+            width: 20%;
+        }
+
+        .right {
+            float: right;
+            width: 70%;
+        }
+
+        .main {
+            float: left;
+        }
+
+        .event-display {
+            float: right;
+        }
+
+        .btn-group current {
+            background-color: #1bd115;
+        }
+
+        .carousel-inner > .active {
+            width: 100%
+        }
+
+        a:link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+
+    <title>CHDC</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-  
-    <body><section class="container">
-         <div class="row">
-           
-         <div class="col-sm-6">
-           <div class="boxed">
-            
-           <h4>Event Search:</h4>
- <div class="radio">
-     <label><input type="radio" name="optradio"><b>Walk-A-Thon</b></label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"><b>Bowl-A-Thon</b></label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio"><b>Health Fair</b></label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio"><b>Fishing Derby</b></label>
-    </div>
-             <br><br>
-             <div class="row">    
-           <h4>Participant Search: <input type="submit" value="Search with current criteria"></h4> 
-             </div>
-            <label for="name">First Name:</label>
-        <input type="text" class="form-control" id="firstname" name="first-name">
-               <label for="name">Last Name:</label>
-        <input type="text" class="form-control" id="lastname" name="last-name">
-             
-              <label for="phone">Phone:</label>
-       <div class="row">
-         <div class="col-sm-2">
-        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="3">
-         </div>
-         <div class="col-sm-2">
-        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="3">
-           </div>
-         <div class="col-sm-3">
-        <input type="text" class="form-control" id="phone" name="user-phone" maxlength="4">
-           </div>
-             </div>
-             
-             <label for="email">Email:</label>
-        <input type="text" class="form-control" id="email" name="user-email">
-             
-             <label for="address">Street Address</label>
-        <input type="text" class="form-control" id="address" name="user-address">
-             
-             <label for="city">City:</label>
-        <input type="text" class="form-control" id="city" name="user-city">
-             
-     <br>
-      <label for="state">State</label>
-		<select class="form-control" id="state" name="state">
-			<option value="">N/A</option>
-			<option value="AK">Alaska</option>
-			<option value="AL">Alabama</option>
-			<option value="AR">Arkansas</option>
-			<option value="AZ">Arizona</option>
-			<option value="CA">California</option>
-			<option value="CO">Colorado</option>
-			<option value="CT">Connecticut</option>
-			<option value="DC">District of Columbia</option>
-			<option value="DE">Delaware</option>
-			<option value="FL">Florida</option>
-			<option value="GA">Georgia</option>
-			<option value="HI">Hawaii</option>
-			<option value="IA">Iowa</option>
-			<option value="ID">Idaho</option>
-			<option value="IL">Illinois</option>
-			<option value="IN">Indiana</option>
-			<option value="KS">Kansas</option>
-			<option value="KY">Kentucky</option>
-			<option value="LA">Louisiana</option>
-			<option value="MA">Massachusetts</option>
-			<option value="MD">Maryland</option>
-			<option value="ME">Maine</option>
-			<option value="MI">Michigan</option>
-			<option value="MN">Minnesota</option>
-			<option value="MO">Missouri</option>
-			<option value="MS">Mississippi</option>
-			<option value="MT">Montana</option>
-			<option value="NC">North Carolina</option>
-			<option value="ND">North Dakota</option>
-			<option value="NE">Nebraska</option>
-			<option value="NH">New Hampshire</option>
-			<option value="NJ">New Jersey</option>
-			<option value="NM">New Mexico</option>
-			<option value="NV">Nevada</option>
-			<option value="NY">New York</option>
-			<option value="OH">Ohio</option>
-			<option value="OK">Oklahoma</option>
-			<option value="OR">Oregon</option>
-			<option value="PA">Pennsylvania</option>
-			<option value="PR">Puerto Rico</option>
-			<option value="RI">Rhode Island</option>
-			<option value="SC">South Carolina</option>
-			<option value="SD">South Dakota</option>
-			<option value="TN">Tennessee</option>
-			<option value="TX">Texas</option>
-			<option value="UT">Utah</option>
-			<option value="VA">Virginia</option>
-			<option value="VT">Vermont</option>
-			<option value="WA">Washington</option>
-			<option value="WI">Wisconsin</option>
-			<option value="WV">West Virginia</option>
-			<option value="WY">Wyoming</option>
-		</select><br>
-             
-             <label for="zip">Zip:</label>
-        <input type="text" class="form-control" id="zip" name="user-zip">
-             
-           </div>
-           </div>
-         <div class="col-sm-6"><div class="boxed">
-           <h4>Results:</h4>
-           <div class="results">
-  <ul class="list-group">
-    <li class="list-group-item">Firstname, Lastname, 222-222-2222, name@website.com, address, city, 72032, age</li>
-    <li class="list-group-item">Firstname, Lastname, 222-222-2222, name@website.com, address, city, 72032, age</li>
-    <li class="list-group-item">Firstname, Lastname, 222-222-2222, name@website.com, address, city, 72032, age</li>
 
-  </ul></div>
-           <input type="submit" value="Print All">
-           <input type="submit" value="Print Selected">
-           </div>
-           </div>
-      </div>
-   </section><script>   $('input[type=radio][name=payChoice]').change(function(){
-     if (this.value == "in-person") {
-       $('.hid').css('display', 'block');
-     }else {
-        $('.hid').css('display', 'none');
-     }
-      });</script></body>
+
+<body>
+    <section class="container">
+        <div class="col-sm-2">
+            <div class="btn-group boxed3">
+                <button class="registerwalk" style="float: right;" button="" onclick="viewwalk()">Walk-A-Thon</button>
+                <button class="registerbowl" style="float: right;" button="" onclick="viewBowl()">Bowl-A-Thon</button>
+                <button class="healffair" style="float: right;" button="" onclick="viewHealth()">Health Fair</button>
+                <button class="fishingderby" style="float: right;" button="" onclick="viewFishing()">Fishing Derby</button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="boxed">
+                    <h2 id="eventtitle">Walk-A-Thon</h2>
+                    <div class="button boxed3" id="register"><a href="http://localhost:54736/walkathon">See Forms</a></div>
+                    <p> </p>
+                </div>
+            </div>
+
+
+    </section>
+
+    <script>
+        $(document).ready(() => {
+        });
+
+        function viewwalk() {
+            document.getElementById("eventtitle").innerHTML = "Walk-A-Thon";
+            document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/walk\">See Forms</a>";
+            $('.button-hid').css('visibility', 'visible');
+        }
+
+        function viewBowl() {
+            document.getElementById("eventtitle").innerHTML = "Bowl-A-Thon";
+            document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/bowl\">See Forms</a>";
+            $('.button').css('visibility', 'visible');
+            $('.button-hid').css('visibility', 'visible');
+        }
+
+        function viewHealth() {
+            document.getElementById("eventtitle").innerHTML = "Health Fair";
+            document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/healthfair\">See Forms</a>";
+            $('.button').css('visibility', 'visible');
+            $('.button-hid').css('visibility', 'hidden');
+        }
+
+        function viewFishing() {
+            document.getElementById("eventtitle").innerHTML = "Fishing Derby";
+            document.getElementById("register").innerHTML = "<a href=\"http://localhost:54736/fish\">See Forms</a>";
+            $('.button').css('visibility', 'visible');
+            $('.button-hid').css('visibility', 'visible');
+        }
+    </script>
+</body>

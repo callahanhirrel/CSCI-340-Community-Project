@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model CommunityProject.Pages.Bowl.CreateModel
 
 @{
@@ -63,7 +63,7 @@
                         <input asp-for="BowlathonInfo.LastName" class="form-control" />
                         <span asp-validation-for="BowlathonInfo.LastName" class="text-danger"></span>
                     </div>
-                </div>
+               </div>
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label asp-for="BowlathonInfo.DOB" class="control-label"></label>
@@ -200,8 +200,10 @@
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label asp-for="BowlathonInfo.Payment" class="control-label"></label>
-                            <input asp-for="BowlathonInfo.Payment" class="form-control" />
-                            <span asp-validation-for="BowlathonInfo.Payment" class="text-danger"></span>
+                            <select asp-for="BowlathonInfo.Payment" class="form-control" />
+                                <option value="in-person">In Person</option>
+                                <option value="online">Online</option>
+                            <!-- <span asp-validation-for="BowlathonInfo.Payment" class="text-danger"></span> -->
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -217,7 +219,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <align ="center">
+                        <align class="center">
                             <div class="col-sm-11">
                                 <p>
                                     <b>
@@ -238,6 +240,7 @@
                 <div class="checkbox">
                     <label>
                         <input asp-for="BowlathonInfo.PicConsent" /> @Html.DisplayNameFor(model => model.BowlathonInfo.PicConsent)
+                        <span asp-validation-for="BowlathonInfo." class="text-danger"></span>
                     </label>
                 </div>
             </div>
@@ -252,7 +255,7 @@
 <div>
     <a asp-page="Index">Back to List</a>
 </div>
-
+</html>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

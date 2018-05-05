@@ -2,92 +2,239 @@
 @model CommunityProject.Pages.Fish.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "";
 }
 
-<h2>Create</h2>
+<html>
+	<h2>@ViewData["Title"]</h2>
+	<head>
+		<style type="text/css">
+			paragraph {
+			  display: flex;
+			  align-items: center;
+			  padding: 0 80px;
+			}
 
-<h4>FishingDerbyInfo</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label>
-                        <input asp-for="FishingDerbyInfo.Consent" /> @Html.DisplayNameFor(model => model.FishingDerbyInfo.Consent))
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.FirstName" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.FirstName" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.LastName" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.LastName" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.DOB" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.DOB" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.DOB" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.Email" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.Email" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.Phone" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.Phone" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.Phone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.Address" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.Address" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.City" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.City" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.City" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.State" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.State" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.State" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.ZIP" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.ZIP" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.ZIP" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FishingDerbyInfo.ShirtSize" class="control-label"></label>
-                <input asp-for="FishingDerbyInfo.ShirtSize" class="form-control" />
-                <span asp-validation-for="FishingDerbyInfo.ShirtSize" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label>
-                        <input asp-for="FishingDerbyInfo.PicConsent" /> @Html.DisplayNameFor(model => model.FishingDerbyInfo.PicConsent))
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
-    </div>
-</div>
+			h4 {text-align:center;}
 
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
+			names {
+			  display: flex;
+			  align-items: center;
+			  text-align: center;
+			  font-style: italic;
+			  font-size: 11.5px;
+			  padding: 0 80px;
+			}
 
+			quote {
+			  font-family: 'Garamond', sans-serif;
+			  font-size: 23px;
+			  font-style: italic;
+			  font-style: bold;
+			  padding: 0 30px;
+			  text-align: center;
+			}
+
+			.row {
+			  padding: 10px;
+			}
+
+			.options {
+			  padding-left: 50px;
+			}
+
+			.boxed {
+			  border: 2px solid black;
+			  border-radius: 8px;
+			  text-align: left;
+			  padding: 15px;
+			  background-color: rgb(252, 252, 252);
+			  display: block;
+			}
+
+			.hid {
+			  text-align: left;
+			  padding: 15px;
+			  font-weight: bold;
+			  display: none;
+			}
+
+			section .row img {
+			  margin: 0 0 30px;
+			  width: 100%;
+			   background-color: #495466
+			}
+		</style>
+	</head>
+	<div class="col-sm-12">
+		<div class="boxed">
+			<h1 align="center">Conway Human Development Center's Community Annual Fishing Derby Registration Form</h1>
+			<hr />
+			<h4>Saturday July 30, 20XX</h4>
+			<h4>7:30am</h4>
+
+			<form method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<div class="row">
+					<div class="row">                      
+						<div class="col-sm-2">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.FirstName" class="control-label">Angler's First Name:</label>
+							<input asp-for="FishingDerbyInfo.FirstName" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.FirstName" class="text-danger"></span>
+                            </div>
+						</div>
+						<div class="col-sm-2">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.LastName" class="control-label">Angler's Last Name:</label>
+							<input asp-for="FishingDerbyInfo.LastName" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.LastName" class="text-danger"></span>
+                            </div>
+						</div>
+						<div class="col-sm-3">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.Phone" class="control-label">Phone:</label>
+							<input asp-for="FishingDerbyInfo.Phone" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.Phone" class="text-danger"></span>
+                            </div>
+						</div>
+						<div class="col-sm-4">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.Email" class="control-label">Email:</label>
+							<input asp-for="FishingDerbyInfo.Email" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.Email" class="text-danger"></span>
+                            </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<div class = "form-group">
+								<label asp-for="FishingDerbyInfo.DOB" class="control-label">Date of Birth:</label>
+								<input asp-for="FishingDerbyInfo.DOB" class="form-control" />
+								<span asp-validation-for="FishingDerbyInfo.DOB" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="col-sm-3">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.Address" class="control-label">Address:</label>
+							<input asp-for="FishingDerbyInfo.Address" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.Address" class="text-danger"></span>
+                            </div>
+						</div>
+						<div class="col-sm-2">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.City" class="control-label">City:</label>
+							<input asp-for="FishingDerbyInfo.City" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.City" class="text-danger"></span>
+                            </div>
+						</div>
+						<div class="col-sm-2">
+							<div class="form-group">
+							<label asp-for="FishingDerbyInfo.State" class="control-label">State:</label>
+							<select asp-for="FishingDerbyInfo.State" class="form-control">
+								<option value="AR">Arkansas</option>
+								<option value="AK">Alaska</option>
+								<option value="AL">Alabama</option>
+								<option value="AZ">Arizona</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DC">District of Columbia</option>
+								<option value="DE">Delaware</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="IA">Iowa</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MD">Maryland</option>
+								<option value="ME">Maine</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MO">Missouri</option>
+								<option value="MS">Mississippi</option>
+								<option value="MT">Montana</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="NE">Nebraska</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NV">Nevada</option>
+								<option value="NY">New York</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="PR">Puerto Rico</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VA">Virginia</option>
+								<option value="VT">Vermont</option>
+								<option value="WA">Washington</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WV">West Virginia</option>
+								<option value="WY">Wyoming</option>
+							</select>
+							</div>
+						</div>
+						<div class="col-sm-2">
+                            <div class="form-group">
+							<label asp-for="FishingDerbyInfo.ZIP" class="control-label">Zip Code:</label>
+							<input asp-for="FishingDerbyInfo.ZIP" class="form-control" />
+							<span asp-validation-for="FishingDerbyInfo.ZIP" class="text-danger"></span>
+                            </div>
+						</div>
+					</div>
+					<div class="row">
+					    <div class="col-sm-2">
+							<div class="form-group">
+								<label asp-for="FishingDerbyInfo.ShirtSize" class="control-label">T-Shirt Size:</label>
+								<select asp-for="FishingDerbyInfo.ShirtSize" class="form-control">
+									<option value="small">S</option>
+									<option value="medium">M</option>
+									<option value="large">L</option>
+									<option value="2x-large">2XL</option>
+									<option value="3x-large">3XL</option>
+									<option value="4x-large">4XL</option>
+									<option value="y-medium">Youth M</option>
+									<option value="y-large">Youth L</option>
+								</select>
+							</div>
+						</div>
+                    </div>
+					<div class="form-group">
+						<div class="checkbox">
+							<label>
+								<input asp-for="FishingDerbyInfo.PicConsent" /> @Html.DisplayNameFor(model => model.FishingDerbyInfo.PicConsent)
+							</label>
+						</div>
+					</div>
+					<p>
+						<b>In consideration of my acceptance of this form, I hereby for myself, my administrators, my heirs and assigns, waive and release any and all rights and claims for damages that I have against the organizers, their associates and representatives of this Fishing Derby for any and all injuries suffered by me or my child while taking part in this event. I grant permission to CHDC Volunteer Council to use my photographs, motion pictures, recordings or other record of this event for the Council’s legitimate purpose.</b>
+					</p>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div>
+		<a asp-page="Index">Back to List</a>
+	</div>
+
+</html>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
