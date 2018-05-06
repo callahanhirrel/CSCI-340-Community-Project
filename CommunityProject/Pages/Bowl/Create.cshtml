@@ -181,10 +181,9 @@
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label asp-for="BowlathonInfo.ShirtSize" class="control-label"></label>
-                            <!--<input asp-for="BowlathonInfo.ShirtSize" class="form-control" />-->
+                            <!-- <input asp-for="BowlathonInfo.ShirtSize" class="form-control" /> -->
                             <select asp-for="BowlathonInfo.ShirtSize" class="form-control">
-                                -->
-                                <!--<span asp-validation-for="BowlathonInfo.ShirtSize" class="text-danger"></span>-->
+                                <!-- <span asp-validation-for="BowlathonInfo.ShirtSize" class="text-danger"></span> -->
 
                                 <option value="small">S</option>
                                 <option value="medium">M</option>
@@ -240,7 +239,7 @@
                 <div class="checkbox">
                     <label>
                         <input asp-for="BowlathonInfo.PicConsent" /> @Html.DisplayNameFor(model => model.BowlathonInfo.PicConsent)
-                        <span asp-validation-for="BowlathonInfo." class="text-danger"></span>
+                        <span asp-validation-for="BowlathonInfo.PicConsent" class="text-danger"></span>
                     </label>
                 </div>
             </div>
