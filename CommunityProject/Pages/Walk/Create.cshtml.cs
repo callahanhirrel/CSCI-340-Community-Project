@@ -36,7 +36,8 @@ namespace CommunityProject.Pages.Walk
             _context.WalkathonInfo.Add(WalkathonInfo);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            // return RedirectToPage("./Index");
+            return RedirectToPage("../submit");
         }
     }
 }

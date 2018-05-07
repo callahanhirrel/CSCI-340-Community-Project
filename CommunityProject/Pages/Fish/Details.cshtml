@@ -5,87 +5,118 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<head>
+    <style>
+    .boxed {
+      border: 2px solid black;
+      border-radius: 8px;
+      text-align: left;
+      padding: 15px;
+      background-color: rgb(252, 252, 252);
+      display: block;
+    }
 
-<div>
-    <h4>FishingDerbyInfo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.Consent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.Consent)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.FirstName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.FirstName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.LastName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.LastName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.DOB)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.DOB)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.Email)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.Email)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.Phone)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.Phone)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.Address)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.Address)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.City)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.City)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.State)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.State)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.ZIP)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.ZIP)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.ShirtSize)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.ShirtSize)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FishingDerbyInfo.PicConsent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FishingDerbyInfo.PicConsent)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.FishingDerbyInfo.ID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
-</div>
+    .row {
+      padding: 10px;
+    }
+    </style>
+    <title>Full Registration Details</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+
+<h2>Full Registration Details</h2>
+
+<body>
+    <section class="container">
+        <div class="row">
+        <div class="boxed">
+            <div>
+                <h4>Fishing Derby</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.Consent)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.Consent)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.FirstName)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.FirstName)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.LastName)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.LastName)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.DOB)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.DOB)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.Email)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.Email)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.Phone)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.Phone)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.Address)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.Address)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.City)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.City)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.State)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.State)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.ZIP)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.ZIP)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.ShirtSize)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.ShirtSize)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FishingDerbyInfo.PicConsent)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.FishingDerbyInfo.PicConsent)
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <a asp-page="./Edit" asp-route-id="@Model.FishingDerbyInfo.ID">Edit</a> |
+                <a asp-page="./Index">Back to List</a>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>

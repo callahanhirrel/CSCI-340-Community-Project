@@ -7,135 +7,209 @@
 <h3></h3>
 
 <html>
-<head><style type="text/css">paragraph {
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
-}
+<head>
+    <style type="text/css">
+        paragraph {
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+        }
 
-h4 {text-align:center;}
+        h4 {
+            text-align: center;
+        }
 
-names {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-style: italic;
-  font-size: 11.5px;
-  padding: 0 80px;
-}
+        names {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-style: italic;
+            font-size: 11.5px;
+            padding: 0 80px;
+        }
 
-quote {
-  font-family: 'Garamond', sans-serif;
-  font-size: 23px;
-  font-style: italic;
-  font-style: bold;
-  padding: 0 30px;
-  text-align: center;
-}
-.row {
-  padding: 10px;
-}
+        quote {
+            font-family: 'Garamond', sans-serif;
+            font-size: 23px;
+            font-style: italic;
+            font-style: bold;
+            padding: 0 30px;
+            text-align: center;
+        }
 
-.options {
-    padding-left: 50px;
-}
+        .row {
+            padding: 20px;
+        }
+
+        .options {
+            padding-left: 50px;
+        }
 
 
-.boxed {
-  border: 2px solid black;
-  border-radius: 8px;
-  text-align: left;
-  padding: 15px;
-  background-color: rgb(252, 252, 252);
-  display: block;
-}
+        .boxed {
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(252, 252, 252);
+            display: grid;
+        }
 
-.hid {
-  text-align: left;
-  padding: 15px;
-  font-weight: bold;
-  display: none;
-}
+        .boxit {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: rgb(252, 252, 252);
+        }
 
-.box {
-  border: 2px solid black;
-  border-radius: 8px;
-}
+        .hid {
+            text-align: left;
+            padding: 15px;
+            font-weight: bold;
+            display: none;
+        }
 
-.headerimg {
-  border: 2px solid black;
-  border-radius: 8px;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Volunteering_%288618932799%29.jpg/1200px-Volunteering_%288618932799%29.jpg");
-  background-size: cover;
-  width: 1120px;
-  height: 700px;
-}</style>
-  
+        .box {
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        .headerimg {
+            border: 2px solid black;
+            border-radius: 8px;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Volunteering_%288618932799%29.jpg/1200px-Volunteering_%288618932799%29.jpg");
+            background-size: cover;
+            width: 1120px;
+            height: 700px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 15px;
+            margin: 0px;
+        }
+
+        .group-list {
+            -moz-column-gap: 20px;
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            -webkit-column-gap: 20px;
+            column-count: 3;
+            column-gap: 20px;
+        }
+
+        .columns {
+            float: left;
+            position: relative;
+            margin-right: 20px;
+        }
+
+        th, td, tr {
+            padding: 15px;
+            margin-left: 20%;
+            width: 33%;
+        }
+
+        table {
+            width: 100%;
+            margin-left: 10%;
+        }
+    </style>
+
     <title>About Us</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  
-   <body>
-    <section class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 align="center">About Us - CHDC Volunteer Council</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 headerimg">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 boxed">
-          <h2>Schedule</h2>
-          <ul>
-            <li>Meets on the 3rd Thursday of each month
-            <li>11:30 A.M. to 12:00 P.M.: Lunch</li>
-            <li>12:00 P.M. to 1:00 P.M.: Meeting</li>
-          </ul>
-        </div>
-      </div>
-      
-       <div class="row">
-        <div class="col-sm-12 boxed"><center>
-          <h2>Members</h2>
-          <b> President</b><br>
-           Annette Matthews<br><br>
-          <b>Vice-President</b><br>
-            Jacqueline Lanier<br><br>
-          <b>Treasurer</b><br>
-          Stefanie Vann<br><br>
-          <b>Secretary</b><br>
-          Adriana Freeman<br><br>
-          <b>Lifetime Honorary Members</b><br>
-          Fred Petrucelli<br>
-          Robert Huber<br><br>
-          <b>Member at Large</b><br>
-          Pat Clayton<br><br>
-          <b>Agency Staff Member</b><br>
-          Christina Dilbeck<br><br>
-          <b>Agency Superintendent</b><br>
-          Sarah Murphy<br><br>
-          <b>Volunteer Council Coordinator</b><br>
-          Elizabeth Molica<br>
-          Ext. 319<br><br>
-          <b>Volunteer Council Secretary</b><br>
-          Ashley Darton and Melissa Boyce<br>
-          Ext. 370<br><br>
-        </center></div>
-      </div>
-    </section>
-  
-<script>   $('input[type=radio][name=payChoice]').change(function(){
-     if (this.value == "in-person") {
-       $('.hid').css('display', 'block');
-     }else {
-        $('.hid').css('display', 'none');
-     }
-      });</script></body>
+</head>
 
-</div></div>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 align="center">About Us - CHDC Volunteer Council</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 headerimg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 boxed">
+                <h2>Schedule</h2>
+                <ul>
+                    <li>Meets on the 3rd Thursday of each month
+                    <li>11:30 A.M. to 12:00 P.M.: Lunch</li>
+                    <li>12:00 P.M. to 1:00 P.M.: Meeting</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-12 boxed">
+            <center>
+                <h2>Members</h2>
+                <table style="width:100%">
+                    <tr>
+                        <th align="right">Vice-President</th>
+                        <th align="right">President</th>
+                        <th align="right">Treasurer</th>
+                    </tr>
+                    <tr>
+                        <td>Jacqueline Lanier</td>
+                        <td>Annette Matthews</td>
+                        <td>Stefanie Vann</td>
+                    </tr>
+                </table><br />
+                <table style="width:100%">
+                    <tr>
+                        <th>Secretary</th>
+                        <th>Lifetime Honorary Members</th>
+                        <th>Member at Large</th>
+                    </tr>
+                    <tr>
+                        <td>Jacqueline Lanier</td>
+                        <td>
+                            Annette Matthews & Robert Huber
+                        </td>
+                        <td>Pat Clayton</td>
+                    </tr>
+                </table><br />
+                <table style="width:100%">
+                    <tr>
+                        <th>Agency Staff Member</th>
+                        <th>Agency Superintendent</th>
+                        <th>Volunteer Council Coordinator</th>
+                    </tr>
+                    <tr>
+                        <td>Christina Dilbeck</td>
+                        <td>Sarah Murphy</td>
+                        <td>Elizabeth Molica</td>
+                    </tr>
+                </table><br />
+                <table style="width:100%">
+                    <tr>
+                        <th> </th>
+                        <th>Volunteer Council Secretary</th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Ashley Darton & Melissa Boyce</td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </section>
+
+    <script>
+        $('input[type=radio][name=payChoice]').change(function () {
+            if (this.value == "in-person") {
+                $('.hid').css('display', 'block');
+            } else {
+                $('.hid').css('display', 'none');
+            }
+        });
+    </script>
+</body>
+</html>

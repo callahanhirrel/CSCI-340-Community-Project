@@ -36,7 +36,8 @@ namespace CommunityProject.Pages.Bowl
             _context.BowlathonInfo.Add(BowlathonInfo);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            // return RedirectToPage("./Index");
+            return RedirectToPage("../submit");
         }
     }
 }

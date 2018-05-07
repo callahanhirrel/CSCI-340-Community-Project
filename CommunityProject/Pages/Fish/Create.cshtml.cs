@@ -36,7 +36,8 @@ namespace CommunityProject.Pages.Fish
             _context.FishingDerbyInfo.Add(FishingDerbyInfo);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            // return RedirectToPage("./Index");
+            return RedirectToPage("../submit");
         }
     }
 }

@@ -38,7 +38,7 @@ namespace CommunityProject.Models
         public string State { get; set; }
 
         [Required]
-        [RegularExpression(@"^\d{5}(?:[-\s]\d{4})?$")] // got this RE from here: https://stackoverflow.com/a/14942826
+        [RegularExpression(@"^\d{5}(?:[-\s]\d{4})?$", ErrorMessage = "Please input a valid ZIP code")] // got this RE from here: https://stackoverflow.com/a/14942826
         public int ZIP { get; set; }
 
         [Required(ErrorMessage = "Field required")]

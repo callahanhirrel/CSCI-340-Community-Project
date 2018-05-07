@@ -1,0 +1,102 @@
+﻿@page
+@model submitModel
+@{
+    ViewData["Title"] = "Submission";
+}
+
+
+
+<h2></h2>
+
+<html>
+<head>
+        <style type="text/css">
+            html body {
+                background-image: url("images/back-CHDC.png");
+                background-size: cover;
+            }
+
+            .boxed {
+                border: 2px solid black;
+                border-radius: 8px;
+                text-align: left;
+                padding: 15px;
+                background-color: rgb(252, 252, 252);
+                display: block;
+            }
+
+            .button {
+                background-color: #202020;
+                color: white;
+                border: 5;
+                border-color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+
+            .button-hid {
+                background-color: #202020;
+                color: white;
+                border: 5;
+                border-color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                visibility: hidden;
+            }
+
+            .boxed3 {
+                border: 2px solid black;
+                border-radius: 8px;
+                display: block;
+            }
+
+            h4 {
+                text-align: center;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <head>
+        <title>Walk-A-Thon</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+
+
+    <section class="container">
+        <div class="col-sm-12">
+            <div class="boxed">
+                <h1 align="center">Thank you for signing-up!</h1>
+                <h4>You have officially signed up for this event.</h4>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="button boxed3 col-sm-5" id="register"><a href="http://localhost:54736">Home</a></div>
+                        <div class="button boxed3 col-sm-5 col-sm-offset-1" id="sponsor"><a href="http://localhost:54736/Events">Back to Events</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+</html>

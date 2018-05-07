@@ -37,7 +37,7 @@
     <div class="boxed">
         <h1 align="center">Conway Human Development Center's Community Walk-A-Thon Registration Form</h1>
         <hr />
-        <h4 align="center">20XX</h4>
+        <h4 align="center" id="date" ></h4>
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="row">
@@ -183,6 +183,9 @@
                             <label asp-for="WalkathonInfo.Payment" class="control-label"></label>
                             <input asp-for="WalkathonInfo.Payment" class="form-control" />
                             <span asp-validation-for="WalkathonInfo.Payment" class="text-danger"></span>
+                            <!-- <select asp-for="WalkathonInfo.Payment" class="form-control" />
+                                <option value="in-person">In Person</option>
+                                <option value="online">Online</option> -->
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -190,7 +193,7 @@
                             <img src="http://i852.photobucket.com/albums/ab88/freckleface130/donate_zpslbvp8yx2.png" style="width:100px;height:35px;">
                         </paybutton>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <align ="center">
                             <div class="col-sm-11">
                                 <p>
@@ -205,7 +208,7 @@
                                 </p>
                             </div>
                         </align>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="form-group">
@@ -216,17 +219,17 @@
                 </div>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Submit" class="btn btn-default" />
             </div>
         </form>
 
     </div>
 </div>
 
-        <div>
-            <a asp-page="Index">Back to List</a>
-        </div>
-
         @section Scripts {
             @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
         }
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.getFullYear();
+    </script>

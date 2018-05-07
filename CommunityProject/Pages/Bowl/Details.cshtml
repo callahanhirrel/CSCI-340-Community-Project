@@ -4,94 +4,124 @@
 @{
     ViewData["Title"] = "Details";
 }
+<head>
+    <style>
+    .boxed {
+      border: 2px solid black;
+      border-radius: 8px;
+      text-align: left;
+      padding: 15px;
+      background-color: rgb(252, 252, 252);
+      display: block;
+    }
 
-<h2>Details</h2>
+    .row {
+      padding: 10px;
+    }
+    </style>
+    <title>Full Registration Details</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-<div>
-    <h4>BowlathonInfo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.TeamID)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.TeamID)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.Payment)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.Payment)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.FirstName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.FirstName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.LastName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.LastName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.DOB)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.DOB)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.Email)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.Email)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.Phone)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.Phone)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.Address)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.Address)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.City)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.City)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.State)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.State)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.ZIP)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.ZIP)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.ShirtSize)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.ShirtSize)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BowlathonInfo.PicConsent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BowlathonInfo.PicConsent)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.BowlathonInfo.ID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
-</div>
+<h2>Full Registration Details</h2>
+
+<body>
+    <section class="container">
+        <div class="row">
+        <div class="boxed">
+            <div>
+                <h4>Bowlathon</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.TeamID)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.TeamID)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.Payment)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.Payment)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.FirstName)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.FirstName)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.LastName)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.LastName)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.DOB)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.DOB)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.Email)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.Email)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.Phone)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.Phone)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.Address)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.Address)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.City)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.City)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.State)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.State)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.ZIP)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.ZIP)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.BowlathonInfo.ShirtSize)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.ShirtSize)
+                    </dd>
+                    <dt>
+                        <!-- @Html.DisplayNameFor(model => model.BowlathonInfo.PicConsent) -->
+                        Photo Consent
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.BowlathonInfo.PicConsent)
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <a asp-page="./Edit" asp-route-id="@Model.BowlathonInfo.ID">Edit</a> |
+                <a asp-page="./Index">Back to List</a>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>

@@ -70,7 +70,7 @@
 		<div class="boxed">
 			<h1 align="center">Conway Human Development Center's Community Annual Fishing Derby Registration Form</h1>
 			<hr />
-			<h4>Saturday July 30, 20XX</h4>
+			<h4 id="date" ></h4>
 			<h4>7:30am</h4>
 
 			<form method="post">
@@ -220,21 +220,22 @@
 						</div>
 					</div>
 					<p>
-						<b>In consideration of my acceptance of this form, I hereby for myself, my administrators, my heirs and assigns, waive and release any and all rights and claims for damages that I have against the organizers, their associates and representatives of this Fishing Derby for any and all injuries suffered by me or my child while taking part in this event. I grant permission to CHDC Volunteer Council to use my photographs, motion pictures, recordings or other record of this event for the Council’s legitimate purpose.</b>
+						<b>In consideration of my acceptance of this form, I hereby for myself, my administrators, my heirs and assigns, waive and release any and all rights and claims for damages that I have against the organizers, their associates and representatives of this Fishing Derby for any and all injuries suffered by me or my child while taking part in this event. I grant permission to CHDC Volunteer Council to use my photographs, motion pictures, recordings or other record of this event for the Council&#39;s legitimate purpose.</b>
 					</p>
                     <div class="form-group">
-                        <input type="submit" value="Create" class="btn btn-default" />
+                        <input type="submit" value="Submit" class="btn btn-default" />
                     </div>
 				</div>
 			</form>
 		</div>
 	</div>
 
-	<div>
-		<a asp-page="Index">Back to List</a>
-	</div>
 
 </html>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<script>
+    var d = new Date();
+    document.getElementById("date").innerHTML = "Saturday July 30, " + d.getFullYear();
+</script>
